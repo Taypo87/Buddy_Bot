@@ -1,11 +1,6 @@
 #include "buddybot.h"
 #include <iom328p.h>
 
-void main(void)
-{
-	init_motors();
-}
-
 void init_motors()
 {
 	//setting PWM pins as output  (Pulse Width Modulation) for speed control
@@ -31,24 +26,24 @@ ISR(SPI_STC_vect) {
 	execute_command((cmd_packet_t *)&SPDR);
 }
 
-void execute_command(struct CommandPacket *packet) {
+void execute_command(struct cmd_packet_t *packet) {
 
 	// Perform actions based on the command
-	switch (command) {
+	switch (packet->command) {
 		case FORWARD:
-		move_forward(packet->speed);
+		MOVE_FORWARD(packet->speed);
 		break;
 		case BACKWARD:
-		move_backward(packet->speed);
+		MOVE_BACKWARD(packet->speed);
 		break;
 		case LEFT:
-		turn_left(packet->speed);
+		TURN_LEFT(packet->speed);
 		break;
 		case RIGHT:
-		turn_right(packet->speed);
+		TURN_RIGHT(packet->speed);
 		break;
 		case STOP:
-		stop_motors();
+		MOVE_STOP();
 		break;
 	}
 }
