@@ -50,11 +50,15 @@
 #define DRIFT_RIGHT(speed) do { \
 	OCR0A = (speed > 0) ? speed * 85 : 0; \
 	OCR0B = (speed > 0) ? (speed * 85) - 50 : 0; \
+	PORTD |= (1 << DIR1); \
+	PORTD |= (1 << DIR2); \
 } while(0)
 
 #define DRIFT_LEFT(speed) do { \
 	OCR0B = (speed > 0) ? speed * 85 : 0; \
 	OCR0A = (speed > 0) ? (speed * 85) - 50 : 0; \
+	PORTD |= (1 << DIR1); \
+	PORTD |= (1 << DIR2); \
 } while(0)
 
 #define MOVE_STOP() do { \
@@ -66,5 +70,12 @@ typedef struct cmd_packet_s {
 	unsigned speed : 2;
 	unsigned command : 6;
 	} cmd_packet_t;
+	
+	
+void init_SPI();
+void init_motors();
+void execute_command(struct cmd_packet_t *packet);
+
+
 #endif
 

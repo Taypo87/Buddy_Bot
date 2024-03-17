@@ -1,6 +1,21 @@
 #include "buddybot.h"
 #include <iom328p.h>
 
+
+void init_SPI()
+{
+	DDRB |= (1 << DDB4);  //Set MISO as output
+	
+	//Set other pins as input
+	DDRB &= ~((1 << DDB3) | (1 << DDB5) | (1 << DDB2));
+	
+	//Enable SPI, set slave and enable SPI interrupts
+	SPCR = (1 << SPE) | (1 << SPIE);
+	
+	//enable global interrupts
+	sei();
+}
+
 void init_motors()
 {
 	//setting PWM pins as output  (Pulse Width Modulation) for speed control
@@ -44,6 +59,12 @@ void execute_command(struct cmd_packet_t *packet) {
 		break;
 		case STOP:
 		MOVE_STOP();
+		case DRIFT_L
+		DRIFT_LEFT();
+		break;
+		case DRIFT_R
+		DRIFT_RIGHT();
+		break;
 		break;
 	}
 }

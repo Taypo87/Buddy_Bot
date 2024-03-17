@@ -4,16 +4,18 @@
  * Created: 2/16/2024 3:59:29 AM
  * Author : Taylor Poczynek
  */ 
-
-#include <avr/io.h>
+#include "buddybot.h"
 
 
 int main(void)
 {
-    /* Replace with your application code */
+	init_motors();
+	init_SPI();
+    
     while (1) 
     {
 		
     }
+	return (0);
 }
 
