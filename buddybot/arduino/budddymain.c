@@ -1,5 +1,5 @@
 #include "buddybot.h"
-#include <iom328p.h>
+
 
 
 void init_SPI()
@@ -41,7 +41,7 @@ ISR(SPI_STC_vect) {
 	execute_command((cmd_packet_t *)&SPDR);
 }
 
-void execute_command(struct cmd_packet_t *packet) {
+void execute_command(cmd_packet_t *packet) {
 
 	// Perform actions based on the command
 	switch (packet->command) {
@@ -59,11 +59,11 @@ void execute_command(struct cmd_packet_t *packet) {
 		break;
 		case STOP:
 		MOVE_STOP();
-		case DRIFT_L
-		DRIFT_LEFT();
+		case DRIFT_L:
+		DRIFT_LEFT(packet->speed);
 		break;
-		case DRIFT_R
-		DRIFT_RIGHT();
+		case DRIFT_R:
+		DRIFT_RIGHT(packet->speed);
 		break;
 		break;
 	}

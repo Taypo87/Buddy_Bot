@@ -1,14 +1,18 @@
 #ifndef _BUDDY_BOT_
 #define _BUDDY_BOT_
 
+#define F_CPU 16000000UL
+#include <util/delay.h>
 #include <avr/io.h>
 #include <avr/interrupt.h>
-#include <util/delay.h>
+
+
 
 #define PWM1 PD3 // motor 1 speed control pin
 #define PWM2 PD6 // motor 2 speed control pin
 #define DIR1 PD2 // motor 1 direction pin
 #define DIR2 PD7 // motor 2 direction pin
+
 
 #define FORWARD 0x00
 #define BACKWARD 0x01
@@ -48,18 +52,18 @@
 } while(0)
 
 #define DRIFT_RIGHT(speed) do { \
-	OCR0A = (speed > 0) ? speed * 85 : 0; \
-	OCR0B = (speed > 0) ? (speed * 85) - 50 : 0; \
+	OCR0A = speed * 85; \
+	OCR0B = speed < 1 ? 0 : (speed * 85) - 50; \
 	PORTD |= (1 << DIR1); \
 	PORTD |= (1 << DIR2); \
-} while(0)
+} while(0);
 
 #define DRIFT_LEFT(speed) do { \
-	OCR0B = (speed > 0) ? speed * 85 : 0; \
-	OCR0A = (speed > 0) ? (speed * 85) - 50 : 0; \
+	OCR0B = speed * 85; \
+	OCR0A = speed < 1 ? 0 : (speed * 85) - 50; \
 	PORTD |= (1 << DIR1); \
 	PORTD |= (1 << DIR2); \
-} while(0)
+} while(0);
 
 #define MOVE_STOP() do { \
 	OCR0A = 0; \
@@ -74,7 +78,7 @@ typedef struct cmd_packet_s {
 	
 void init_SPI();
 void init_motors();
-void execute_command(struct cmd_packet_t *packet);
+void execute_command(cmd_packet_t *packet);
 
 
 #endif

@@ -5,6 +5,7 @@
  * Author : Taylor Poczynek
  */ 
 #include "buddybot.h"
+#include "budddymain.c"
 
 
 int main(void)

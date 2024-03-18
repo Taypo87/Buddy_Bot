@@ -26,4 +26,14 @@ typedef struct cmd_packet_s {
     unsigned command : 6;
     } cmd_packet_t;
 
+int spi_open();
+int spi_close();
+int move_forward(spi_fd);
+int move_back(spi_fd);
+int move_left(spi_fd);
+int move_right(spi_fd);
+int drift_left(spi_fd);
+int drift_right(spi_fd);
+int move_stop(spi_fd);
+
 #endif
