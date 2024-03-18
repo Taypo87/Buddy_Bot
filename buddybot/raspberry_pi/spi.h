@@ -28,12 +28,13 @@ typedef struct cmd_packet_s {
 
 int spi_open();
 int spi_close();
-int move_forward(spi_fd);
-int move_back(spi_fd);
-int move_left(spi_fd);
-int move_right(spi_fd);
-int drift_left(spi_fd);
-int drift_right(spi_fd);
-int move_stop(spi_fd);
+int move_forward(int spi_fd);
+int move_back(int spi_fd);
+int move_left(int spi_fd);
+int move_right(int spi_fd);
+int drift_left(int spi_fd);
+int drift_right(int spi_fd);
+int move_stop(int spi_fd);
+int get_spi_fd();
 
 #endif

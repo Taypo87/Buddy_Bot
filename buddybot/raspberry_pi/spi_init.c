@@ -1,4 +1,5 @@
 #include "spi.h"
+#include <string.h>
 
 static int spi_fd = -1;
 uint8_t  mode = 0;      // Example SPI mode
@@ -25,11 +26,16 @@ int spi_open() {
     return 0;
 }
 
+int get_spi_fd()
+{
+    return(spi_fd);
+}
+
 int spi_close() {
     return close(spi_fd);
 }
 
-int move_forward(spi_fd) {
+int move_forward(int spi_fd) {
     cmd_packet_t packet;
     ssize_t bytes_written;
     
@@ -48,7 +54,7 @@ int move_forward(spi_fd) {
     return 0;
 }
 
-int move_back(spi_fd) {
+int move_back(int spi_fd) {
     cmd_packet_t packet;
     ssize_t bytes_written;
     
@@ -67,7 +73,7 @@ int move_back(spi_fd) {
     return 0;
 }
 
-int move_left(spi_fd) {
+int move_left(int spi_fd) {
     cmd_packet_t packet;
     ssize_t bytes_written;
     
@@ -86,7 +92,7 @@ int move_left(spi_fd) {
     return 0;
 }
 
-int move_right(spi_fd) {
+int move_right(int spi_fd) {
     cmd_packet_t packet;
     ssize_t bytes_written;
     
@@ -105,7 +111,7 @@ int move_right(spi_fd) {
     return 0;
 }
 
-int drift_left(spi_fd) {
+int drift_left(int spi_fd) {
     cmd_packet_t packet;
     ssize_t bytes_written;
     
@@ -124,7 +130,7 @@ int drift_left(spi_fd) {
     return 0;
 }
 
-int drift_right(spi_fd) {
+int drift_right(int spi_fd) {
     cmd_packet_t packet;
     ssize_t bytes_written;
     
@@ -143,7 +149,7 @@ int drift_right(spi_fd) {
     return 0;
 }
 
-int move_stop(spi_fd) {
+int move_stop(int spi_fd) {
     cmd_packet_t packet;
     ssize_t bytes_written;
     
