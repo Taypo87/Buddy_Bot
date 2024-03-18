@@ -1,0 +1,399 @@
+
+buddybot.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000000  00800100  00800100  000002b6  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         00000262  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  000002b6  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  000002e8  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000040  00000000  00000000  00000328  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   0000075e  00000000  00000000  00000368  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 000006a0  00000000  00000000  00000ac6  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   00000316  00000000  00000000  00001166  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  000000ac  00000000  00000000  0000147c  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    000003ac  00000000  00000000  00001528  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    00000193  00000000  00000000  000018d4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000030  00000000  00000000  00001a67  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 3b 00 	jmp	0x76	; 0x76 <__ctors_end>
+   4:	0c 94 45 00 	jmp	0x8a	; 0x8a <__bad_interrupt>
+   8:	0c 94 45 00 	jmp	0x8a	; 0x8a <__bad_interrupt>
+   c:	0c 94 45 00 	jmp	0x8a	; 0x8a <__bad_interrupt>
+  10:	0c 94 45 00 	jmp	0x8a	; 0x8a <__bad_interrupt>
+  14:	0c 94 45 00 	jmp	0x8a	; 0x8a <__bad_interrupt>
+  18:	0c 94 45 00 	jmp	0x8a	; 0x8a <__bad_interrupt>
+  1c:	0c 94 45 00 	jmp	0x8a	; 0x8a <__bad_interrupt>
+  20:	0c 94 45 00 	jmp	0x8a	; 0x8a <__bad_interrupt>
+  24:	0c 94 45 00 	jmp	0x8a	; 0x8a <__bad_interrupt>
+  28:	0c 94 45 00 	jmp	0x8a	; 0x8a <__bad_interrupt>
+  2c:	0c 94 45 00 	jmp	0x8a	; 0x8a <__bad_interrupt>
+  30:	0c 94 45 00 	jmp	0x8a	; 0x8a <__bad_interrupt>
+  34:	0c 94 45 00 	jmp	0x8a	; 0x8a <__bad_interrupt>
+  38:	0c 94 45 00 	jmp	0x8a	; 0x8a <__bad_interrupt>
+  3c:	0c 94 45 00 	jmp	0x8a	; 0x8a <__bad_interrupt>
+  40:	0c 94 45 00 	jmp	0x8a	; 0x8a <__bad_interrupt>
+  44:	0c 94 fe 00 	jmp	0x1fc	; 0x1fc <__vector_17>
+  48:	0c 94 45 00 	jmp	0x8a	; 0x8a <__bad_interrupt>
+  4c:	0c 94 45 00 	jmp	0x8a	; 0x8a <__bad_interrupt>
+  50:	0c 94 45 00 	jmp	0x8a	; 0x8a <__bad_interrupt>
+  54:	0c 94 45 00 	jmp	0x8a	; 0x8a <__bad_interrupt>
+  58:	0c 94 45 00 	jmp	0x8a	; 0x8a <__bad_interrupt>
+  5c:	0c 94 45 00 	jmp	0x8a	; 0x8a <__bad_interrupt>
+  60:	0c 94 45 00 	jmp	0x8a	; 0x8a <__bad_interrupt>
+  64:	0c 94 45 00 	jmp	0x8a	; 0x8a <__bad_interrupt>
+  68:	7c 00       	.word	0x007c	; ????
+  6a:	90 00       	.word	0x0090	; ????
+  6c:	a4 00       	.word	0x00a4	; ????
+  6e:	b8 00       	.word	0x00b8	; ????
+  70:	e6 00       	.word	0x00e6	; ????
+  72:	ce 00       	.word	0x00ce	; ????
+  74:	cc 00       	.word	0x00cc	; ????
+
+00000076 <__ctors_end>:
+  76:	11 24       	eor	r1, r1
+  78:	1f be       	out	0x3f, r1	; 63
+  7a:	cf ef       	ldi	r28, 0xFF	; 255
+  7c:	d8 e0       	ldi	r29, 0x08	; 8
+  7e:	de bf       	out	0x3e, r29	; 62
+  80:	cd bf       	out	0x3d, r28	; 61
+  82:	0e 94 24 01 	call	0x248	; 0x248 <main>
+  86:	0c 94 2f 01 	jmp	0x25e	; 0x25e <_exit>
+
+0000008a <__bad_interrupt>:
+  8a:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+0000008e <init_SPI>:
+
+
+
+void init_SPI()
+{
+	DDRB |= (1 << DDB4);  //Set MISO as output
+  8e:	84 b1       	in	r24, 0x04	; 4
+  90:	80 61       	ori	r24, 0x10	; 16
+  92:	84 b9       	out	0x04, r24	; 4
+	
+	//Set other pins as input
+	DDRB &= ~((1 << DDB3) | (1 << DDB5) | (1 << DDB2));
+  94:	84 b1       	in	r24, 0x04	; 4
+  96:	83 7d       	andi	r24, 0xD3	; 211
+  98:	84 b9       	out	0x04, r24	; 4
+	
+	//Enable SPI, set slave and enable SPI interrupts
+	SPCR = (1 << SPE) | (1 << SPIE);
+  9a:	80 ec       	ldi	r24, 0xC0	; 192
+  9c:	8c bd       	out	0x2c, r24	; 44
+	
+	//enable global interrupts
+	sei();
+  9e:	78 94       	sei
+  a0:	08 95       	ret
+
+000000a2 <init_motors>:
+}
+
+void init_motors()
+{
+	//setting PWM pins as output  (Pulse Width Modulation) for speed control
+	DDRB |= (1 << PWM1) | (1 << PWM2);
+  a2:	84 b1       	in	r24, 0x04	; 4
+  a4:	88 64       	ori	r24, 0x48	; 72
+  a6:	84 b9       	out	0x04, r24	; 4
+	
+	//setting direction pins as output
+	DDRD |= (1 << DIR1) | (1 << DIR2);
+  a8:	8a b1       	in	r24, 0x0a	; 10
+  aa:	84 68       	ori	r24, 0x84	; 132
+  ac:	8a b9       	out	0x0a, r24	; 10
+	
+	//set up timer for PWM
+	TCCR1A = (1 << COM1A1) | (1 << COM1B1) | (1 << WGM10);
+  ae:	81 ea       	ldi	r24, 0xA1	; 161
+  b0:	80 93 80 00 	sts	0x0080, r24	; 0x800080 <__TEXT_REGION_LENGTH__+0x7f8080>
+	TCCR1B = (1 << CS11);
+  b4:	82 e0       	ldi	r24, 0x02	; 2
+  b6:	80 93 81 00 	sts	0x0081, r24	; 0x800081 <__TEXT_REGION_LENGTH__+0x7f8081>
+	
+	//set duty cycle to 0 (motors off)
+	
+	OCR1A = 0;
+  ba:	10 92 89 00 	sts	0x0089, r1	; 0x800089 <__TEXT_REGION_LENGTH__+0x7f8089>
+  be:	10 92 88 00 	sts	0x0088, r1	; 0x800088 <__TEXT_REGION_LENGTH__+0x7f8088>
+	OCR1B = 0;
+  c2:	10 92 8b 00 	sts	0x008B, r1	; 0x80008b <__TEXT_REGION_LENGTH__+0x7f808b>
+  c6:	10 92 8a 00 	sts	0x008A, r1	; 0x80008a <__TEXT_REGION_LENGTH__+0x7f808a>
+	// set direction of motors to forward
+	
+	PORTD &= ~(1 << DIR1);
+  ca:	8b b1       	in	r24, 0x0b	; 11
+  cc:	8b 7f       	andi	r24, 0xFB	; 251
+  ce:	8b b9       	out	0x0b, r24	; 11
+	PORTD &= ~(1 << DIR2);
+  d0:	8b b1       	in	r24, 0x0b	; 11
+  d2:	8f 77       	andi	r24, 0x7F	; 127
+  d4:	8b b9       	out	0x0b, r24	; 11
+  d6:	08 95       	ret
+
+000000d8 <execute_command>:
+}
+ISR(SPI_STC_vect) {
+	execute_command((cmd_packet_t *)&SPDR);
+}
+
+void execute_command(cmd_packet_t *packet) {
+  d8:	dc 01       	movw	r26, r24
+
+	// Perform actions based on the command
+	switch (packet->command) {
+  da:	4c 91       	ld	r20, X
+  dc:	e4 2f       	mov	r30, r20
+  de:	e6 95       	lsr	r30
+  e0:	e6 95       	lsr	r30
+  e2:	4e 2f       	mov	r20, r30
+  e4:	50 e0       	ldi	r21, 0x00	; 0
+  e6:	47 30       	cpi	r20, 0x07	; 7
+  e8:	51 05       	cpc	r21, r1
+  ea:	08 f0       	brcs	.+2      	; 0xee <execute_command+0x16>
+  ec:	86 c0       	rjmp	.+268    	; 0x1fa <execute_command+0x122>
+  ee:	fa 01       	movw	r30, r20
+  f0:	ec 5c       	subi	r30, 0xCC	; 204
+  f2:	ff 4f       	sbci	r31, 0xFF	; 255
+  f4:	0c 94 29 01 	jmp	0x252	; 0x252 <__tablejump2__>
+		case FORWARD:
+		MOVE_FORWARD(packet->speed);
+  f8:	8b b1       	in	r24, 0x0b	; 11
+  fa:	84 60       	ori	r24, 0x04	; 4
+  fc:	8b b9       	out	0x0b, r24	; 11
+  fe:	8b b1       	in	r24, 0x0b	; 11
+ 100:	80 68       	ori	r24, 0x80	; 128
+ 102:	8b b9       	out	0x0b, r24	; 11
+ 104:	9c 91       	ld	r25, X
+ 106:	93 70       	andi	r25, 0x03	; 3
+ 108:	25 e5       	ldi	r18, 0x55	; 85
+ 10a:	92 9f       	mul	r25, r18
+ 10c:	90 2d       	mov	r25, r0
+ 10e:	11 24       	eor	r1, r1
+ 110:	97 bd       	out	0x27, r25	; 39
+ 112:	8c 91       	ld	r24, X
+ 114:	83 70       	andi	r24, 0x03	; 3
+ 116:	82 9f       	mul	r24, r18
+ 118:	80 2d       	mov	r24, r0
+ 11a:	11 24       	eor	r1, r1
+ 11c:	88 bd       	out	0x28, r24	; 40
+		break;
+ 11e:	08 95       	ret
+		case BACKWARD:
+		MOVE_BACKWARD(packet->speed);
+ 120:	8b b1       	in	r24, 0x0b	; 11
+ 122:	8b 7f       	andi	r24, 0xFB	; 251
+ 124:	8b b9       	out	0x0b, r24	; 11
+ 126:	8b b1       	in	r24, 0x0b	; 11
+ 128:	8f 77       	andi	r24, 0x7F	; 127
+ 12a:	8b b9       	out	0x0b, r24	; 11
+ 12c:	9c 91       	ld	r25, X
+ 12e:	93 70       	andi	r25, 0x03	; 3
+ 130:	25 e5       	ldi	r18, 0x55	; 85
+ 132:	92 9f       	mul	r25, r18
+ 134:	90 2d       	mov	r25, r0
+ 136:	11 24       	eor	r1, r1
+ 138:	97 bd       	out	0x27, r25	; 39
+ 13a:	8c 91       	ld	r24, X
+ 13c:	83 70       	andi	r24, 0x03	; 3
+ 13e:	82 9f       	mul	r24, r18
+ 140:	80 2d       	mov	r24, r0
+ 142:	11 24       	eor	r1, r1
+ 144:	88 bd       	out	0x28, r24	; 40
+		break;
+ 146:	08 95       	ret
+		case LEFT:
+		TURN_LEFT(packet->speed);
+ 148:	8b b1       	in	r24, 0x0b	; 11
+ 14a:	84 60       	ori	r24, 0x04	; 4
+ 14c:	8b b9       	out	0x0b, r24	; 11
+ 14e:	8b b1       	in	r24, 0x0b	; 11
+ 150:	8f 77       	andi	r24, 0x7F	; 127
+ 152:	8b b9       	out	0x0b, r24	; 11
+ 154:	9c 91       	ld	r25, X
+ 156:	93 70       	andi	r25, 0x03	; 3
+ 158:	25 e5       	ldi	r18, 0x55	; 85
+ 15a:	92 9f       	mul	r25, r18
+ 15c:	90 2d       	mov	r25, r0
+ 15e:	11 24       	eor	r1, r1
+ 160:	97 bd       	out	0x27, r25	; 39
+ 162:	8c 91       	ld	r24, X
+ 164:	83 70       	andi	r24, 0x03	; 3
+ 166:	82 9f       	mul	r24, r18
+ 168:	80 2d       	mov	r24, r0
+ 16a:	11 24       	eor	r1, r1
+ 16c:	88 bd       	out	0x28, r24	; 40
+		break;
+ 16e:	08 95       	ret
+		case RIGHT:
+		TURN_RIGHT(packet->speed);
+ 170:	8b b1       	in	r24, 0x0b	; 11
+ 172:	80 68       	ori	r24, 0x80	; 128
+ 174:	8b b9       	out	0x0b, r24	; 11
+ 176:	8b b1       	in	r24, 0x0b	; 11
+ 178:	8b 7f       	andi	r24, 0xFB	; 251
+ 17a:	8b b9       	out	0x0b, r24	; 11
+ 17c:	9c 91       	ld	r25, X
+ 17e:	93 70       	andi	r25, 0x03	; 3
+ 180:	25 e5       	ldi	r18, 0x55	; 85
+ 182:	92 9f       	mul	r25, r18
+ 184:	90 2d       	mov	r25, r0
+ 186:	11 24       	eor	r1, r1
+ 188:	97 bd       	out	0x27, r25	; 39
+ 18a:	8c 91       	ld	r24, X
+ 18c:	83 70       	andi	r24, 0x03	; 3
+ 18e:	82 9f       	mul	r24, r18
+ 190:	80 2d       	mov	r24, r0
+ 192:	11 24       	eor	r1, r1
+ 194:	88 bd       	out	0x28, r24	; 40
+		break;
+ 196:	08 95       	ret
+		case STOP:
+		MOVE_STOP();
+ 198:	17 bc       	out	0x27, r1	; 39
+ 19a:	18 bc       	out	0x28, r1	; 40
+		case DRIFT_L:
+		DRIFT_LEFT(packet->speed);
+ 19c:	8c 91       	ld	r24, X
+ 19e:	83 70       	andi	r24, 0x03	; 3
+ 1a0:	95 e5       	ldi	r25, 0x55	; 85
+ 1a2:	89 9f       	mul	r24, r25
+ 1a4:	80 2d       	mov	r24, r0
+ 1a6:	11 24       	eor	r1, r1
+ 1a8:	88 bd       	out	0x28, r24	; 40
+ 1aa:	8c 91       	ld	r24, X
+ 1ac:	83 70       	andi	r24, 0x03	; 3
+ 1ae:	29 f0       	breq	.+10     	; 0x1ba <execute_command+0xe2>
+ 1b0:	89 9f       	mul	r24, r25
+ 1b2:	80 2d       	mov	r24, r0
+ 1b4:	11 24       	eor	r1, r1
+ 1b6:	82 53       	subi	r24, 0x32	; 50
+ 1b8:	01 c0       	rjmp	.+2      	; 0x1bc <execute_command+0xe4>
+ 1ba:	80 e0       	ldi	r24, 0x00	; 0
+ 1bc:	87 bd       	out	0x27, r24	; 39
+ 1be:	8b b1       	in	r24, 0x0b	; 11
+ 1c0:	84 60       	ori	r24, 0x04	; 4
+ 1c2:	8b b9       	out	0x0b, r24	; 11
+ 1c4:	8b b1       	in	r24, 0x0b	; 11
+ 1c6:	80 68       	ori	r24, 0x80	; 128
+ 1c8:	8b b9       	out	0x0b, r24	; 11
+		break;
+ 1ca:	08 95       	ret
+		case DRIFT_R:
+		DRIFT_RIGHT(packet->speed);
+ 1cc:	8c 91       	ld	r24, X
+ 1ce:	83 70       	andi	r24, 0x03	; 3
+ 1d0:	95 e5       	ldi	r25, 0x55	; 85
+ 1d2:	89 9f       	mul	r24, r25
+ 1d4:	80 2d       	mov	r24, r0
+ 1d6:	11 24       	eor	r1, r1
+ 1d8:	87 bd       	out	0x27, r24	; 39
+ 1da:	8c 91       	ld	r24, X
+ 1dc:	83 70       	andi	r24, 0x03	; 3
+ 1de:	29 f0       	breq	.+10     	; 0x1ea <execute_command+0x112>
+ 1e0:	89 9f       	mul	r24, r25
+ 1e2:	80 2d       	mov	r24, r0
+ 1e4:	11 24       	eor	r1, r1
+ 1e6:	82 53       	subi	r24, 0x32	; 50
+ 1e8:	01 c0       	rjmp	.+2      	; 0x1ec <execute_command+0x114>
+ 1ea:	80 e0       	ldi	r24, 0x00	; 0
+ 1ec:	88 bd       	out	0x28, r24	; 40
+ 1ee:	8b b1       	in	r24, 0x0b	; 11
+ 1f0:	84 60       	ori	r24, 0x04	; 4
+ 1f2:	8b b9       	out	0x0b, r24	; 11
+ 1f4:	8b b1       	in	r24, 0x0b	; 11
+ 1f6:	80 68       	ori	r24, 0x80	; 128
+ 1f8:	8b b9       	out	0x0b, r24	; 11
+ 1fa:	08 95       	ret
+
+000001fc <__vector_17>:
+	// set direction of motors to forward
+	
+	PORTD &= ~(1 << DIR1);
+	PORTD &= ~(1 << DIR2);
+}
+ISR(SPI_STC_vect) {
+ 1fc:	1f 92       	push	r1
+ 1fe:	0f 92       	push	r0
+ 200:	0f b6       	in	r0, 0x3f	; 63
+ 202:	0f 92       	push	r0
+ 204:	11 24       	eor	r1, r1
+ 206:	2f 93       	push	r18
+ 208:	3f 93       	push	r19
+ 20a:	4f 93       	push	r20
+ 20c:	5f 93       	push	r21
+ 20e:	6f 93       	push	r22
+ 210:	7f 93       	push	r23
+ 212:	8f 93       	push	r24
+ 214:	9f 93       	push	r25
+ 216:	af 93       	push	r26
+ 218:	bf 93       	push	r27
+ 21a:	ef 93       	push	r30
+ 21c:	ff 93       	push	r31
+	execute_command((cmd_packet_t *)&SPDR);
+ 21e:	8e e4       	ldi	r24, 0x4E	; 78
+ 220:	90 e0       	ldi	r25, 0x00	; 0
+ 222:	0e 94 6c 00 	call	0xd8	; 0xd8 <execute_command>
+}
+ 226:	ff 91       	pop	r31
+ 228:	ef 91       	pop	r30
+ 22a:	bf 91       	pop	r27
+ 22c:	af 91       	pop	r26
+ 22e:	9f 91       	pop	r25
+ 230:	8f 91       	pop	r24
+ 232:	7f 91       	pop	r23
+ 234:	6f 91       	pop	r22
+ 236:	5f 91       	pop	r21
+ 238:	4f 91       	pop	r20
+ 23a:	3f 91       	pop	r19
+ 23c:	2f 91       	pop	r18
+ 23e:	0f 90       	pop	r0
+ 240:	0f be       	out	0x3f, r0	; 63
+ 242:	0f 90       	pop	r0
+ 244:	1f 90       	pop	r1
+ 246:	18 95       	reti
+
+00000248 <main>:
+#include "budddymain.c"
+
+
+int main(void)
+{
+	init_motors();
+ 248:	0e 94 51 00 	call	0xa2	; 0xa2 <init_motors>
+	init_SPI();
+ 24c:	0e 94 47 00 	call	0x8e	; 0x8e <init_SPI>
+ 250:	ff cf       	rjmp	.-2      	; 0x250 <main+0x8>
+
+00000252 <__tablejump2__>:
+ 252:	ee 0f       	add	r30, r30
+ 254:	ff 1f       	adc	r31, r31
+ 256:	05 90       	lpm	r0, Z+
+ 258:	f4 91       	lpm	r31, Z
+ 25a:	e0 2d       	mov	r30, r0
+ 25c:	09 94       	ijmp
+
+0000025e <_exit>:
+ 25e:	f8 94       	cli
+
+00000260 <__stop_program>:
+ 260:	ff cf       	rjmp	.-2      	; 0x260 <__stop_program>
