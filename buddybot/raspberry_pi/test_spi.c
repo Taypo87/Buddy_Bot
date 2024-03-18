@@ -8,7 +8,8 @@ int main()
 {
     int fd;
     char command[10];
-
+    
+    spi_open();
     fd = get_spi_fd();
     while (1)
     {
