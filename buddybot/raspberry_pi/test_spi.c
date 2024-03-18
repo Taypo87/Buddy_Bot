@@ -1,7 +1,7 @@
 #include "spi.h"
 #include <string.h>
 
-#define INPUT_SIZE = 10
+#define INPUT_SIZE  10
 
 
 int main()
@@ -15,6 +15,7 @@ int main()
     {
         printf("Awaiting Command!\n");
         fgets(command , 10, stdin);
+        command[strcspn(command, "\n")] = 0;
         if (strcmp(command, "forward") == 0)
             move_forward(fd);
         else if (strcmp(command, "backward") == 0)
