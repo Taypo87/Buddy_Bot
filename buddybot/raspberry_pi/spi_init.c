@@ -153,7 +153,7 @@ int move_stop(int spi_fd) {
     cmd_packet_t packet;
     ssize_t bytes_written;
     
-    packet.speed = 3;
+    packet.speed = 0;
     packet.command = STOP;
     if (spi_fd < 0) {
         fprintf(stderr, "SPI connection not initialized.\n");
