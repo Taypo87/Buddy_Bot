@@ -1,4 +1,5 @@
 #include </usr/include/SDL2/SDL.h>
+#include "../spi.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -8,34 +9,42 @@
 #define SENSITIVITY_THRESHOLD_Y 30000
 #define BUFFER_ZONE 6000
 
-int main(int argc, char *argv[]) {
-    if (SDL_Init(SDL_INIT_VIDEO | SDL_INIT_JOYSTICK) < 0) {
+int main(int argc, char *argv[])
+{
+    int spifd;
+    int running = 1, axisValueX, axisValueY;
+    int prevAxisValueX = 0; // Previous value of the X axis
+    int prevAxisValueY = 0; // Previous value of the Y axis
+
+    if (SDL_Init(SDL_INIT_VIDEO | SDL_INIT_JOYSTICK) < 0)
+    {
         fprintf(stderr, "Could not initialize SDL: %s\n", SDL_GetError());
         return 1;
     }
 
     SDL_Joystick *joystick = SDL_JoystickOpen(0);
-    if (!joystick) {
+    if (!joystick)
+    {
         fprintf(stderr, "Could not open joystick: %s\n", SDL_GetError());
         SDL_Quit();
         return 1;
     }
+    spi_open();
+    spifd = get_spi_fd();
 
-    int running = 1;
-    int prevAxisValueX = 0; // Previous value of the X axis
-    int prevAxisValueY = 0; // Previous value of the Y axis
-    while (running) {
+    while (running)
+    {
         SDL_JoystickUpdate(); // Update the state of the joystick
 
-        int axisValueX = SDL_JoystickGetAxis(joystick, 0); // Get the value of the X axis
-        int axisValueY = SDL_JoystickGetAxis(joystick, 1); // Get the value of the Y axis
+        axisValueX = SDL_JoystickGetAxis(joystick, 0); // Get the value of the X axis
+        axisValueY = SDL_JoystickGetAxis(joystick, 1); // Get the value of the Y axis
 
         if (prevAxisValueX || prevAxisValueY) 
         {   
             if((abs(axisValueX) < SENSITIVITY_THRESHOLD_X - DEAD_ZONE_X - BUFFER_ZONE) &&
              (abs(axisValueY) < (SENSITIVITY_THRESHOLD_Y - DEAD_ZONE_Y - BUFFER_ZONE)))
             {
-                printf("Joystick returned to neutral\n");
+                move_stop(spifd);
                 prevAxisValueX = 0;
                 prevAxisValueY = 0;
             }
@@ -43,24 +52,22 @@ int main(int argc, char *argv[]) {
         if (axisValueX > SENSITIVITY_THRESHOLD_X && !prevAxisValueX)
         {
             prevAxisValueX = axisValueX;
-            printf("Joystick moved right\n");
+            move_right(spifd);
         } else if (axisValueX < -SENSITIVITY_THRESHOLD_X && !prevAxisValueX)
         {
             prevAxisValueX = axisValueX;
-            printf("Joystick moved left\n");
+            move_left(spifd);
         }
 
         if (axisValueY > SENSITIVITY_THRESHOLD_Y && !prevAxisValueY)
         {
             prevAxisValueY = axisValueY;
-            printf("Joystick moved backward\n");
+            move_back(spifd);
         } else if (axisValueY < -SENSITIVITY_THRESHOLD_Y && !prevAxisValueY)
         {
             prevAxisValueY = axisValueY;
-            printf("Joystick moved forward\n");
+            move_forward(spifd);
         }
-
-        
 
         SDL_Delay(10); // Add a small delay to prevent the loop from running too fast
 
