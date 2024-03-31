@@ -6,19 +6,30 @@
 #include <errno.h>
 #include <string.h>
 
-int main() {
+#define DEAD_ZONE 8000
+#define SENSITIVITY_THRESHOLD 30000
+#define LEEWAY 10000
+
+
+int main(void)
+{
     int fd;
     struct libevdev *dev = NULL;
     int rc = 1;
 
-    // Open the device
-    fd = open("/dev/input/event5", O_RDONLY|O_NONBLOCK);
-    if (fd < 0) {
+    fd = open("/dev/input/event5", O_RDONLY, O_NONBLOCK);
+    if (fd < 0)
+    {
         perror("Failed to open device");
-        return 1;
+        return (1);
     }
-
     rc = libevdev_new_from_fd(fd, &dev);
+    if (rc < 0)
+    {
+        fprintf(stderr, "Failed to init libevdev (%s)\n", strerror(-rc));
+        return (1);
+    }
+     rc = libevdev_new_from_fd(fd, &dev);
     if (rc < 0) {
         fprintf(stderr, "Failed to init libevdev (%s)\n", strerror(-rc));
         return 1;
@@ -26,52 +37,33 @@ int main() {
 
     printf("Input device name: \"%s\"\n", libevdev_get_name(dev));
 
-    // Initialize the state of the stick
-    int stick_vertical = 0; // 0 = neutral, 1 = up, -1 = down
-    int stick_horizontal = 0; // 0 = neutral, 1 = right, -1 = left
-
     // Read events
     do {
         struct input_event ev;
         rc = libevdev_next_event(dev, LIBEVDEV_READ_FLAG_NORMAL, &ev);
         if (rc == 0) {
-            // Check the left stick vertical position
-            if (ev.type == EV_ABS && ev.code == ABS_Y) {
-                if (ev.value < 128) {
-                    if (stick_vertical != 1) {
-                        printf("Move forward\n");
-                        stick_vertical = 1;
-                    }
-                } else if (ev.value > 128) {
-                    if (stick_vertical != -1) {
-                        printf("Move backward\n");
-                        stick_vertical = -1;
-                    }
-                } else {
-                    if (stick_vertical != 0) {
-                        printf("Stop\n");
-                        stick_vertical = 0;
-                    }
-                }
-            }
+            // Check the left stick position
+            if (ev.type == EV_ABS) {
+                static int x_value = 32768; // Center position
+                static int y_value = 32768; // Center position
 
-            // Check the left stick horizontal position
-            if (ev.type == EV_ABS && ev.code == ABS_X) {
-                if (ev.value < 128) {
-                    if (stick_horizontal != -1) {
-                        printf("Turn left\n");
-                        stick_horizontal = -1;
-                    }
-                } else if (ev.value > 128) {
-                    if (stick_horizontal != 1) {
-                        printf("Turn right\n");
-                        stick_horizontal = 1;
-                    }
-                } else {
-                    if (stick_horizontal != 0) {
-                        stick_horizontal = 0;
-                        printf("Stop\n");
-                    }
+                if (ev.code == ABS_X) {
+                    x_value = ev.value;
+                } else if (ev.code == ABS_Y) {
+                    y_value = ev.value;
+                }
+
+                // Determine the direction based on the vector (x_value, y_value)
+                if (x_value < 32768 - SENSITIVITY_THRESHOLD && abs(y_value - 32768) < LEEWAY) {
+                    printf("Turn left\n");
+                } else if (x_value > 32768 + SENSITIVITY_THRESHOLD && abs(y_value - 32768) < LEEWAY) {
+                    printf("Turn right\n");
+                } else if (y_value < 32768 - SENSITIVITY_THRESHOLD) {
+                    printf("Move forward\n");
+                } else if (y_value > 32768 + SENSITIVITY_THRESHOLD) {
+                    printf("Move backward\n");
+                } else if (abs(x_value - 32768) < DEAD_ZONE && abs(y_value - 32768) < DEAD_ZONE) {
+                    printf("Stop\n");
                 }
             }
         }
@@ -80,6 +72,4 @@ int main() {
     // Clean up
     libevdev_free(dev);
     close(fd);
-
-    return 0;
 }
