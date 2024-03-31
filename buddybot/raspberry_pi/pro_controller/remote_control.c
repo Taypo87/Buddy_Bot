@@ -2,11 +2,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define DEAD_ZONE_X 14000
-#define DEAD_ZONE_Y 14000
+#define DEAD_ZONE_X 12000
+#define DEAD_ZONE_Y 12000
 #define SENSITIVITY_THRESHOLD_X 30000
 #define SENSITIVITY_THRESHOLD_Y 30000
-#define BUFFER_ZONE 8000
+#define BUFFER_ZONE 6000
 
 int main(int argc, char *argv[]) {
     if (SDL_Init(SDL_INIT_VIDEO | SDL_INIT_JOYSTICK) < 0) {
@@ -30,32 +30,37 @@ int main(int argc, char *argv[]) {
         int axisValueX = SDL_JoystickGetAxis(joystick, 0); // Get the value of the X axis
         int axisValueY = SDL_JoystickGetAxis(joystick, 1); // Get the value of the Y axis
 
-        if (axisValueX > SENSITIVITY_THRESHOLD_X)
+        if (prevAxisValueX || prevAxisValueY) 
+        {   
+            if((abs(axisValueX) < SENSITIVITY_THRESHOLD_X - DEAD_ZONE_X - BUFFER_ZONE) &&
+             (abs(axisValueY) < (SENSITIVITY_THRESHOLD_Y - DEAD_ZONE_Y - BUFFER_ZONE)))
+            {
+                printf("Joystick returned to neutral\n");
+                prevAxisValueX = 0;
+                prevAxisValueY = 0;
+            }
+        }
+        if (axisValueX > SENSITIVITY_THRESHOLD_X && !prevAxisValueX)
         {
             prevAxisValueX = axisValueX;
             printf("Joystick moved right\n");
-        } else if (axisValueX < -SENSITIVITY_THRESHOLD_X)
+        } else if (axisValueX < -SENSITIVITY_THRESHOLD_X && !prevAxisValueX)
         {
             prevAxisValueX = axisValueX;
             printf("Joystick moved left\n");
         }
 
-        if (axisValueY > SENSITIVITY_THRESHOLD_Y)
+        if (axisValueY > SENSITIVITY_THRESHOLD_Y && !prevAxisValueY)
         {
-            prevAxisValueY = axisValueY
+            prevAxisValueY = axisValueY;
             printf("Joystick moved backward\n");
-        } else if (axisValueY < -SENSITIVITY_THRESHOLD_Y)
+        } else if (axisValueY < -SENSITIVITY_THRESHOLD_Y && !prevAxisValueY)
         {
-            prevAxisValueY = axisValueY
+            prevAxisValueY = axisValueY;
             printf("Joystick moved forward\n");
         }
 
-        if ((prevAxisValueX || prevAxisValueY) && (!axisValueX && ! axisValueY)) 
-        {
-            printf("Joystick returned to neutral\n");
-            prevAxisValueX = 0;
-            prevAxisValueY = 0;
-        }
+        
 
         SDL_Delay(10); // Add a small delay to prevent the loop from running too fast
 
