@@ -4,6 +4,7 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <errno.h>
+#include <string.h>
 
 int main() {
     int fd;
@@ -11,7 +12,7 @@ int main() {
     int rc = 1;
 
     // Open the device
-    fd = open("/dev/input/event0", O_RDONLY|O_NONBLOCK);
+    fd = open("/dev/input/event5", O_RDONLY|O_NONBLOCK);
     if (fd < 0) {
         perror("Failed to open device");
         return 1;
@@ -69,7 +70,7 @@ int main() {
                 } else {
                     if (stick_horizontal != 0) {
                         stick_horizontal = 0;
-                        pritnf("Stop\n");
+                        printf("Stop\n");
                     }
                 }
             }
