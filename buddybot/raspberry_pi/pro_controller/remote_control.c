@@ -1,75 +1,66 @@
+#include </usr/include/SDL2/SDL.h>
 #include <stdio.h>
-#include </usr/include/libevdev-1.0/libevdev/libevdev.h>
-#include <fcntl.h>
-#include <unistd.h>
 #include <stdlib.h>
-#include <errno.h>
-#include <string.h>
 
-#define DEAD_ZONE 8000
-#define SENSITIVITY_THRESHOLD 30000
-#define LEEWAY 10000
+#define DEAD_ZONE_X 14000
+#define DEAD_ZONE_Y 14000
+#define SENSITIVITY_THRESHOLD_X 30000
+#define SENSITIVITY_THRESHOLD_Y 30000
+#define BUFFER_ZONE 8000
 
-
-int main(void)
-{
-    int fd;
-    struct libevdev *dev = NULL;
-    int rc = 1;
-
-    fd = open("/dev/input/event5", O_RDONLY, O_NONBLOCK);
-    if (fd < 0)
-    {
-        perror("Failed to open device");
-        return (1);
-    }
-    rc = libevdev_new_from_fd(fd, &dev);
-    if (rc < 0)
-    {
-        fprintf(stderr, "Failed to init libevdev (%s)\n", strerror(-rc));
-        return (1);
-    }
-     rc = libevdev_new_from_fd(fd, &dev);
-    if (rc < 0) {
-        fprintf(stderr, "Failed to init libevdev (%s)\n", strerror(-rc));
+int main(int argc, char *argv[]) {
+    if (SDL_Init(SDL_INIT_VIDEO | SDL_INIT_JOYSTICK) < 0) {
+        fprintf(stderr, "Could not initialize SDL: %s\n", SDL_GetError());
         return 1;
     }
 
-    printf("Input device name: \"%s\"\n", libevdev_get_name(dev));
+    SDL_Joystick *joystick = SDL_JoystickOpen(0);
+    if (!joystick) {
+        fprintf(stderr, "Could not open joystick: %s\n", SDL_GetError());
+        SDL_Quit();
+        return 1;
+    }
 
-    // Read events
-    do {
-        struct input_event ev;
-        rc = libevdev_next_event(dev, LIBEVDEV_READ_FLAG_NORMAL, &ev);
-        if (rc == 0) {
-            // Check the left stick position
-            if (ev.type == EV_ABS) {
-                static int x_value = 32768; // Center position
-                static int y_value = 32768; // Center position
+    int running = 1;
+    int prevAxisValueX = 0; // Previous value of the X axis
+    int prevAxisValueY = 0; // Previous value of the Y axis
+    while (running) {
+        SDL_JoystickUpdate(); // Update the state of the joystick
 
-                if (ev.code == ABS_X) {
-                    x_value = ev.value;
-                } else if (ev.code == ABS_Y) {
-                    y_value = ev.value;
-                }
+        int axisValueX = SDL_JoystickGetAxis(joystick, 0); // Get the value of the X axis
+        int axisValueY = SDL_JoystickGetAxis(joystick, 1); // Get the value of the Y axis
 
-                // Determine the direction based on the vector (x_value, y_value)
-                if (x_value < 32768 - SENSITIVITY_THRESHOLD && abs(y_value - 32768) < LEEWAY) {
-                    printf("Turn left\n");
-                } else if (x_value > 32768 + SENSITIVITY_THRESHOLD && abs(y_value - 32768) < LEEWAY) {
-                    printf("Turn right\n");
-                } else if (y_value < 32768 - SENSITIVITY_THRESHOLD) {
-                    printf("Move forward\n");
-                } else if (y_value > 32768 + SENSITIVITY_THRESHOLD) {
-                    printf("Move backward\n");
-                } else if (abs(x_value - 32768) < DEAD_ZONE && abs(y_value - 32768) < DEAD_ZONE) {
-                    printf("Stop\n");
-                }
+        if (axisValueX > SENSITIVITY_THRESHOLD_X) {
+            printf("Joystick moved right\n");
+        } else if (axisValueX < -SENSITIVITY_THRESHOLD_X) {
+            printf("Joystick moved left\n");
+        }
+
+        if (axisValueY > SENSITIVITY_THRESHOLD_Y) {
+            printf("Joystick moved backward\n");
+        } else if (axisValueY < -SENSITIVITY_THRESHOLD_Y) {
+            printf("Joystick moved forward\n");
+        }
+
+        if (abs(axisValueX) <= DEAD_ZONE_X - BUFFER_ZONE &&
+             abs(axisValueY) <= DEAD_ZONE_Y - BUFFER_ZONE) {
+            printf("Joystick returned to neutral\n");
+        }
+
+        SDL_Delay(10); // Add a small delay to prevent the loop from running too fast
+
+
+        // Check for the quit event
+        SDL_Event event;
+        while (SDL_PollEvent(&event)) {
+            if (event.type == SDL_QUIT) {
+                running = 0;
             }
         }
-    } while (rc == 1 || rc == 0 || rc == -EAGAIN);
+    }
 
-    // Clean up
-    libevdev_free(dev);
-    close(fd);
+    SDL_JoystickClose(joystick);
+    SDL_Quit();
+
+    return 0;
 }
