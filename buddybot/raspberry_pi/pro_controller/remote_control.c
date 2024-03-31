@@ -82,6 +82,7 @@ int main(int argc, char *argv[])
     }
 
     SDL_JoystickClose(joystick);
+    spi_close();
     SDL_Quit();
 
     return 0;
