@@ -1,6 +1,7 @@
 #ifndef _SPI_H_
 #define _SPI_H_
 
+#include <Python.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
@@ -26,15 +27,25 @@ typedef struct cmd_packet_s {
     unsigned command : 6;
     } cmd_packet_t;
 
-int spi_open();
-int spi_close();
-int move_forward(int spi_fd);
-int move_back(int spi_fd);
-int move_left(int spi_fd);
-int move_right(int spi_fd);
-int drift_left(int spi_fd);
-int drift_right(int spi_fd);
-int move_stop(int spi_fd);
-int get_spi_fd();
+// int spi_open();
+// int spi_close();
+// int move_forward(int spi_fd);
+// int move_back(int spi_fd);
+// int move_left(int spi_fd);
+// int move_right(int spi_fd);
+// int drift_left(int spi_fd);
+// int drift_right(int spi_fd);
+// int move_stop(int spi_fd);
+// int get_spi_fd();
+// Function prototypes
+static PyObject* spi_open(PyObject* self, PyObject* args);
+static PyObject* spi_close(PyObject* self, PyObject* args);
+static PyObject* move_forward(PyObject* self, PyObject* args);
+static PyObject* move_back(PyObject* self, PyObject* args);
+static PyObject* move_left(PyObject* self, PyObject* args);
+static PyObject* move_right(PyObject* self, PyObject* args);
+static PyObject* drift_left(PyObject* self, PyObject* args);
+static PyObject* drift_right(PyObject* self, PyObject* args);
+static PyObject* move_stop(PyObject* self, PyObject* args);
 
 #endif
