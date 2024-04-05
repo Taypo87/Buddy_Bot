@@ -1,0 +1,4 @@
+# Scripts to create packages
+ros2 pkg create mpu6050_pkg
+
+ros2 pkg create tfmini_lidar_pkg
