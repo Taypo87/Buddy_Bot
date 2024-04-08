@@ -1,0 +1,8 @@
+setup.py
+move_bot/__init__.py
+move_bot.egg-info/PKG-INFO
+move_bot.egg-info/SOURCES.txt
+move_bot.egg-info/dependency_links.txt
+move_bot.egg-info/top_level.txt
+move_bot/msg/__init__.py
+move_bot/msg/_movement.py

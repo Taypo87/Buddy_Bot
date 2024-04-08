@@ -1,0 +1,155 @@
+-- Found ament_cmake: 2.0.4 (/home/taylor/ros2_iron/install/ament_cmake/share/ament_cmake/cmake)
+-- Found rclcpp: 21.0.5 (/home/taylor/ros2_iron/install/rclcpp/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 4.0.1 (/home/taylor/ros2_iron/install/rosidl_generator_c/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.0.1 (/home/taylor/ros2_iron/install/rosidl_generator_cpp/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_introspection_c;rosidl_typesupport_fastrtps_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_introspection_cpp;rosidl_typesupport_fastrtps_cpp
+-- Found rmw_implementation_cmake: 7.1.0 (/home/taylor/ros2_iron/install/rmw_implementation_cmake/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 7.1.3 (/home/taylor/ros2_iron/install/rmw_fastrtps_cpp/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found std_msgs: 5.0.0 (/home/taylor/ros2_iron/install/std_msgs/share/std_msgs/cmake)
+-- Found rosidl_default_generators: 1.5.0 (/home/taylor/ros2_iron/install/rosidl_default_generators/share/rosidl_default_generators/cmake)
+-- Found rosidl_adapter: 4.0.1 (/home/taylor/ros2_iron/install/rosidl_adapter/share/rosidl_adapter/cmake)
+-- Found ament_cmake_ros: 0.11.2 (/home/taylor/ros2_iron/install/ament_cmake_ros/share/ament_cmake_ros/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_introspection_c;rosidl_typesupport_fastrtps_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_introspection_cpp;rosidl_typesupport_fastrtps_cpp
+-- Found python_cmake_module: 0.10.2 (/home/taylor/ros2_iron/install/python_cmake_module/share/python_cmake_module/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.11
+-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.11.so
+-- Found ament_lint_auto: 0.14.3 (/home/taylor/ros2_iron/install/ament_lint_auto/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: 
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/move_bot
+[  2%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[  5%] [32mBuilding CXX object CMakeFiles/move_node.dir/src/move_bot.cpp.o[0m
+[  5%] Built target ament_cmake_python_copy_move_bot
+[  5%] Built target move_bot__rosidl_generator_type_description
+[  8%] [34m[1mGenerating C code for ROS interfaces[0m
+[ 11%] [34m[1mGenerating C++ code for ROS interfaces[0m
+running egg_info
+creating move_bot.egg-info
+writing move_bot.egg-info/PKG-INFO
+writing dependency_links to move_bot.egg-info/dependency_links.txt
+writing top-level names to move_bot.egg-info/top_level.txt
+writing manifest file 'move_bot.egg-info/SOURCES.txt'
+[ 11%] Built target move_bot__cpp
+reading manifest file 'move_bot.egg-info/SOURCES.txt'
+writing manifest file 'move_bot.egg-info/SOURCES.txt'
+[ 13%] [32mBuilding C object CMakeFiles/move_bot__rosidl_generator_c.dir/rosidl_generator_c/move_bot/msg/detail/movement__description.c.o[0m
+[ 16%] [32mBuilding C object CMakeFiles/move_bot__rosidl_generator_c.dir/rosidl_generator_c/move_bot/msg/detail/movement__functions.c.o[0m
+[ 19%] [32mBuilding C object CMakeFiles/move_bot__rosidl_generator_c.dir/rosidl_generator_c/move_bot/msg/detail/movement__type_support.c.o[0m
+[ 19%] Built target ament_cmake_python_build_move_bot_egg
+[ 22%] [32m[1mLinking C shared library libmove_bot__rosidl_generator_c.so[0m
+[ 22%] Built target move_bot__rosidl_generator_c
+[ 30%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[ 30%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[ 30%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/move_bot__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/move_bot/msg/detail/movement__type_support.cpp.o[0m
+[ 36%] [32mBuilding CXX object CMakeFiles/move_bot__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/move_bot/msg/movement__type_support.cpp.o[0m
+[ 38%] [32mBuilding CXX object CMakeFiles/move_bot__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/move_bot/msg/detail/movement__type_support_c.cpp.o[0m
+[ 41%] [32m[1mLinking CXX shared library libmove_bot__rosidl_typesupport_cpp.so[0m
+[ 44%] [32m[1mLinking CXX shared library libmove_bot__rosidl_typesupport_fastrtps_c.so[0m
+[ 44%] Built target move_bot__rosidl_typesupport_cpp
+[ 47%] [32m[1mLinking CXX shared library libmove_bot__rosidl_typesupport_introspection_cpp.so[0m
+[ 50%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[ 50%] Built target move_bot__rosidl_typesupport_fastrtps_c
+[ 52%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[ 52%] Built target move_bot__rosidl_typesupport_introspection_cpp
+[ 55%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[ 58%] [32mBuilding CXX object CMakeFiles/move_bot__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/move_bot/msg/detail/dds_fastrtps/movement__type_support.cpp.o[0m
+[ 61%] [32mBuilding C object CMakeFiles/move_bot__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/move_bot/msg/detail/movement__type_support.c.o[0m
+[ 63%] [32mBuilding CXX object CMakeFiles/move_bot__rosidl_typesupport_c.dir/rosidl_typesupport_c/move_bot/msg/movement__type_support.cpp.o[0m
+[ 66%] [32m[1mLinking C shared library libmove_bot__rosidl_typesupport_introspection_c.so[0m
+[ 66%] Built target move_bot__rosidl_typesupport_introspection_c
+[ 69%] [32m[1mLinking CXX shared library libmove_bot__rosidl_typesupport_c.so[0m
+[ 69%] Built target move_bot__rosidl_typesupport_c
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/move_bot/src/move_bot.cpp:28:46:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass Move[m[K’
+   28 |   void movement_command_callback(const Move::[01;31m[Kmsg[m[K::MovementCommand::SharedPtr msg)
+      |                                              [01;31m[K^~~[m[K
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/move_bot/src/move_bot.cpp:6:7:[m[K [01;36m[Knote: [m[Kdefinition of ‘[01m[Kclass Move[m[K’ is not complete until the closing brace
+    6 | class [01;36m[KMove[m[K : public rclcpp::Node
+      |       [01;36m[K^~~~[m[K
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/move_bot/src/move_bot.cpp:28:66:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+   28 |   void movement_command_callback(const Move::msg::MovementCommand[01;31m[K::[m[KSharedPtr msg)
+      |                                                                  [01;31m[K^~[m[K
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/move_bot/src/move_bot.cpp:28:66:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+   28 |   void movement_command_callback[34m[K([m[Kconst Move::msg::MovementCommand[01;31m[K:[m[K[32m[K:[m[KSharedPtr msg)
+      |                                 [34m[K~[m[K                                [01;31m[K^[m[K[32m[K~[m[K
+      |                                                                  [32m[K)[m[K
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/move_bot/src/move_bot.cpp:28:51:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   28 |   void movement_command_callback(const Move::msg::[01;31m[KMovementCommand[m[K::SharedPtr msg)
+      |                                                   [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |                                                                  [32m[K;[m[K
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/move_bot/src/move_bot.cpp:28:68:[m[K [01;31m[Kerror: [m[K‘[01m[KSharedPtr[m[K’ in namespace ‘[01m[K::[m[K’ does not name a type
+   28 |   void movement_command_callback(const Move::msg::MovementCommand::[01;31m[KSharedPtr[m[K msg)
+      |                                                                    [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/move_bot/src/move_bot.cpp:55:30:[m[K [01;31m[Kerror: [m[Kincomplete type ‘[01m[KMove[m[K’ used in nested name specifier
+   55 |   rclcpp::Subscription<Move::[01;31m[Kmsg[m[K::MovementCommand>::SharedPtr subscription_;
+      |                              [01;31m[K^~~[m[K
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/move_bot/src/move_bot.cpp:55:50:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   55 |   rclcpp::Subscription<Move::msg::MovementCommand[01;31m[K>[m[K::SharedPtr subscription_;
+      |                                                  [01;31m[K^[m[K
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/move_bot/src/move_bot.cpp:55:50:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/move_bot/src/move_bot.cpp:55:50:[m[K [01;31m[Kerror: [m[Ktemplate argument 4 is invalid
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/move_bot/src/move_bot.cpp:55:50:[m[K [01;31m[Kerror: [m[Ktemplate argument 5 is invalid
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/move_bot/src/move_bot.cpp:55:53:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   55 |   rclcpp::Subscription<Move::msg::MovementCommand>::[01;31m[KSharedPtr[m[K subscription_;
+      |                                                     [01;31m[K^~~~~~~~~[m[K
+      |                                                              [32m[K;[m[K
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/move_bot/src/move_bot.cpp:55:63:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription_[m[K’ does not name a type; did you mean ‘[01m[Krmw_subscription_t[m[K’?
+   55 |   rclcpp::Subscription<Move::msg::MovementCommand>::SharedPtr [01;31m[Ksubscription_[m[K;
+      |                                                               [01;31m[K^~~~~~~~~~~~~[m[K
+      |                                                               [32m[Krmw_subscription_t[m[K
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/move_bot/src/move_bot.cpp:[m[K In constructor ‘[01m[KMove::Move()[m[K’:
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/move_bot/src/move_bot.cpp:22:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_subscription_t[m[K’?
+   22 |     [01;31m[Ksubscription_[m[K = this->create_subscription<Move::msg::MovementCommand>(
+      |     [01;31m[K^~~~~~~~~~~~~[m[K
+      |     [32m[Krmw_subscription_t[m[K
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/move_bot/src/move_bot.cpp:22:53:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ is not a member of ‘[01m[KMove[m[K’
+   22 |     subscription_ = this->create_subscription<Move::[01;31m[Kmsg[m[K::MovementCommand>(
+      |                                                     [01;31m[K^~~[m[K
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/move_bot/src/move_bot.cpp:22:27:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+   22 |     subscription_ = this->[01;31m[Kcreate_subscription<Move::msg::MovementCommand>[m[K(
+      |                           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/move_bot/src/move_bot.cpp:22:74:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KMove::create_subscription<<expression error> >(const char [18], int, std::_Bind_helper<false, void (Move::*)(...), Move*, const std::_Placeholder<1>&>::type)[m[K’
+   22 |     subscription_ = [01;31m[Kthis->create_subscription<Move::msg::MovementCommand>([m[K
+      |                     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   23 | [01;31m[K        "movement_commands", 10,[m[K
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~[m[K                                          
+   24 | [01;31m[K        std::bind(&Move::movement_command_callback, this, std::placeholders::_1))[m[K;
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/taylor/ros2_iron/install/rclcpp/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/home/taylor/ros2_iron/install/rclcpp/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/home/taylor/ros2_iron/install/rclcpp/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+                 from [01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/move_bot/src/move_bot.cpp:1[m[K:
+[01m[K/home/taylor/ros2_iron/install/rclcpp/include/rclcpp/rclcpp/node.hpp:220:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const std::string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)[m[K’
+  220 |   [01;36m[Kcreate_subscription[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taylor/ros2_iron/install/rclcpp/include/rclcpp/rclcpp/node.hpp:220:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/move_bot/src/move_bot.cpp:22:74:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   22 |     subscription_ = [01;31m[Kthis->create_subscription<Move::msg::MovementCommand>([m[K
+      |                     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   23 | [01;31m[K        "movement_commands", 10,[m[K
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~[m[K                                          
+   24 | [01;31m[K        std::bind(&Move::movement_command_callback, this, std::placeholders::_1))[m[K;
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[ 72%] [32m[1mLinking CXX shared library libmove_bot__rosidl_typesupport_fastrtps_cpp.so[0m
+[ 72%] Built target move_bot__rosidl_typesupport_fastrtps_cpp
+[ 72%] Built target move_bot
+[ 75%] [34m[1mGenerating Python code for ROS interfaces[0m
+gmake[2]: *** [CMakeFiles/move_node.dir/build.make:76: CMakeFiles/move_node.dir/src/move_bot.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:623: CMakeFiles/move_node.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[ 75%] Built target move_bot__py
+gmake: *** [Makefile:146: all] Error 2

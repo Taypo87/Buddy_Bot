@@ -1,0 +1,24 @@
+{
+  "package_name": "move_bot",
+  "output_dir": "/home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/move_bot/rosidl_generator_py/move_bot",
+  "template_dir": "/home/taylor/ros2_iron/install/rosidl_generator_py/share/rosidl_generator_py/cmake/../resource",
+  "idl_tuples": [
+    "/home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/move_bot/rosidl_adapter/move_bot:msg/Movement.idl"
+  ],
+  "target_dependencies": [
+    "/home/taylor/ros2_iron/install/rosidl_generator_py/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py",
+    "/home/taylor/ros2_iron/install/rosidl_generator_py/lib/python3.11/site-packages/rosidl_generator_py/__init__.py",
+    "/home/taylor/ros2_iron/install/rosidl_generator_py/lib/python3.11/site-packages/rosidl_generator_py/generate_py_impl.py",
+    "/home/taylor/ros2_iron/install/rosidl_generator_py/share/rosidl_generator_py/cmake/../resource/_action_pkg_typesupport_entry_point.c.em",
+    "/home/taylor/ros2_iron/install/rosidl_generator_py/share/rosidl_generator_py/cmake/../resource/_action.py.em",
+    "/home/taylor/ros2_iron/install/rosidl_generator_py/share/rosidl_generator_py/cmake/../resource/_idl_pkg_typesupport_entry_point.c.em",
+    "/home/taylor/ros2_iron/install/rosidl_generator_py/share/rosidl_generator_py/cmake/../resource/_idl_support.c.em",
+    "/home/taylor/ros2_iron/install/rosidl_generator_py/share/rosidl_generator_py/cmake/../resource/_idl.py.em",
+    "/home/taylor/ros2_iron/install/rosidl_generator_py/share/rosidl_generator_py/cmake/../resource/_msg_pkg_typesupport_entry_point.c.em",
+    "/home/taylor/ros2_iron/install/rosidl_generator_py/share/rosidl_generator_py/cmake/../resource/_msg_support.c.em",
+    "/home/taylor/ros2_iron/install/rosidl_generator_py/share/rosidl_generator_py/cmake/../resource/_msg.py.em",
+    "/home/taylor/ros2_iron/install/rosidl_generator_py/share/rosidl_generator_py/cmake/../resource/_srv_pkg_typesupport_entry_point.c.em",
+    "/home/taylor/ros2_iron/install/rosidl_generator_py/share/rosidl_generator_py/cmake/../resource/_srv.py.em",
+    "/home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/move_bot/rosidl_adapter/move_bot/msg/Movement.idl"
+  ]
+}
