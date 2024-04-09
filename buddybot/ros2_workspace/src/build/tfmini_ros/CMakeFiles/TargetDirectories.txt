@@ -1,0 +1,10 @@
+/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/build/tfmini_ros/CMakeFiles/uninstall.dir
+/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/build/tfmini_ros/CMakeFiles/tfmini_ros_uninstall.dir
+/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/build/tfmini_ros/CMakeFiles/tfmini_ros_node.dir
+/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/build/tfmini_ros/CMakeFiles/test.dir
+/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/build/tfmini_ros/CMakeFiles/edit_cache.dir
+/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/build/tfmini_ros/CMakeFiles/rebuild_cache.dir
+/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/build/tfmini_ros/CMakeFiles/list_install_components.dir
+/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/build/tfmini_ros/CMakeFiles/install.dir
+/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/build/tfmini_ros/CMakeFiles/install/local.dir
+/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/build/tfmini_ros/CMakeFiles/install/strip.dir

@@ -1,0 +1,25 @@
+[ 33%] [32mBuilding CXX object CMakeFiles/tfmini_ros_node.dir/src/TFmini.cpp.o[0m
+[ 66%] [32m[1mLinking CXX executable tfmini_ros_node[0m
+[100%] Built target tfmini_ros_node
+-- Install configuration: ""
+-- Installing: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/install/tfmini_ros/share/ament_index/resource_index/package_run_dependencies/tfmini_ros
+-- Installing: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/install/tfmini_ros/share/ament_index/resource_index/parent_prefix_path/tfmini_ros
+-- Installing: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/install/tfmini_ros/share/tfmini_ros/environment/ament_prefix_path.sh
+-- Installing: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/install/tfmini_ros/share/tfmini_ros/environment/ament_prefix_path.dsv
+-- Installing: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/install/tfmini_ros/share/tfmini_ros/environment/path.sh
+-- Installing: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/install/tfmini_ros/share/tfmini_ros/environment/path.dsv
+-- Installing: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/install/tfmini_ros/share/tfmini_ros/local_setup.bash
+-- Installing: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/install/tfmini_ros/share/tfmini_ros/local_setup.sh
+-- Installing: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/install/tfmini_ros/share/tfmini_ros/local_setup.zsh
+-- Installing: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/install/tfmini_ros/share/tfmini_ros/local_setup.dsv
+-- Installing: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/install/tfmini_ros/share/tfmini_ros/package.dsv
+-- Installing: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/install/tfmini_ros/share/ament_index/resource_index/packages/tfmini_ros
+-- Installing: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/install/tfmini_ros/share/tfmini_ros/cmake/tfmini_rosConfig.cmake
+-- Installing: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/install/tfmini_ros/share/tfmini_ros/cmake/tfmini_rosConfig-version.cmake
+-- Installing: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/install/tfmini_ros/share/tfmini_ros/package.xml
+-- Installing: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/install/tfmini_ros/lib/tfmini_ros/tfmini_ros_node
+-- Set runtime path of "/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/install/tfmini_ros/lib/tfmini_ros/tfmini_ros_node" to ""
+-- Installing: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/install/tfmini_ros/include/
+-- Installing: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/install/tfmini_ros/include//TFmini.h
+-- Installing: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/install/tfmini_ros/share/tfmini_ros/launch
+-- Installing: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/install/tfmini_ros/share/tfmini_ros/launch/tfmini.launch

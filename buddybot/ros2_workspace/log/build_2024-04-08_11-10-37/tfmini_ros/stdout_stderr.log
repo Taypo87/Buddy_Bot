@@ -1,0 +1,9 @@
+[ 33%] [32mBuilding CXX object CMakeFiles/tfmini_ros_node.dir/src/TFmini_ros_node.cpp.o[0m
+In file included from [01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/tfmini_ros/src/TFmini_ros_node.cpp:1[m[K:
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/tfmini_ros/include/TFmini.h:1:10:[m[K [01;31m[Kfatal error: [m[Kros/ros.h: No such file or directory
+    1 | #include [01;31m[K<ros/ros.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/tfmini_ros_node.dir/build.make:76: CMakeFiles/tfmini_ros_node.dir/src/TFmini_ros_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/tfmini_ros_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

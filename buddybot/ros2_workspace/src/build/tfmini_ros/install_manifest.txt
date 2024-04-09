@@ -1,0 +1,16 @@
+/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/install/tfmini_ros/share/ament_index/resource_index/package_run_dependencies/tfmini_ros
+/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/install/tfmini_ros/share/ament_index/resource_index/parent_prefix_path/tfmini_ros
+/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/install/tfmini_ros/share/tfmini_ros/environment/ament_prefix_path.dsv
+/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/install/tfmini_ros/share/tfmini_ros/environment/path.dsv
+/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/install/tfmini_ros/share/tfmini_ros/local_setup.bash
+/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/install/tfmini_ros/share/tfmini_ros/local_setup.sh
+/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/install/tfmini_ros/share/tfmini_ros/local_setup.zsh
+/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/install/tfmini_ros/share/tfmini_ros/local_setup.dsv
+/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/install/tfmini_ros/share/tfmini_ros/package.dsv
+/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/install/tfmini_ros/share/ament_index/resource_index/packages/tfmini_ros
+/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/install/tfmini_ros/share/tfmini_ros/cmake/tfmini_rosConfig.cmake
+/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/install/tfmini_ros/share/tfmini_ros/cmake/tfmini_rosConfig-version.cmake
+/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/install/tfmini_ros/share/tfmini_ros/package.xml
+/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/install/tfmini_ros/lib/tfmini_ros/tfmini_ros_node
+/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/install/tfmini_ros/include//TFmini.h
+/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/install/tfmini_ros/share/tfmini_ros/launch/tfmini.launch

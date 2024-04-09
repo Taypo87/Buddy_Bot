@@ -1,0 +1,19 @@
+running develop
+/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:146: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running egg_info
+writing tfmini_s.egg-info/PKG-INFO
+writing dependency_links to tfmini_s.egg-info/dependency_links.txt
+writing entry points to tfmini_s.egg-info/entry_points.txt
+writing requirements to tfmini_s.egg-info/requires.txt
+writing top-level names to tfmini_s.egg-info/top_level.txt
+reading manifest file 'tfmini_s.egg-info/SOURCES.txt'
+writing manifest file 'tfmini_s.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/tfmini_s/lib/python3.11/site-packages/tfmini-s.egg-link (link to .)
+Installing tfmini_s_node script to /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/tfmini_s/lib/tfmini_s
+
+Installed /home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/tfmini_s
+running install_data

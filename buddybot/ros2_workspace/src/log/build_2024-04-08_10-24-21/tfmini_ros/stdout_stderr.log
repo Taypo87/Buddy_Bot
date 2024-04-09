@@ -1,0 +1,22 @@
+[ 33%] [32mBuilding CXX object CMakeFiles/tfmini_ros_node.dir/src/TFmini.cpp.o[0m
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/tfmini_ros/src/TFmini.cpp:25:5:[m[K [01;31m[Kerror: [m[K‘[01m[Krclccp[m[K’ does not name a type
+   25 |     [01;31m[Krclccp[m[K::Logger logger_;
+      |     [01;31m[K^~~~~~[m[K
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/tfmini_ros/src/TFmini.cpp:[m[K In constructor ‘[01m[Kbenewake::TFmini::TFmini(std::string, int)[m[K’:
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/tfmini_ros/src/TFmini.cpp:15:48:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Kbenewake::TFmini[m[K’ does not have any field named ‘[01m[Klogger_[m[K’
+   15 |     TFmini(std::string _name, int _baudRate) : [01;31m[Klogger_[m[K(rclcpp::get_logger("TFmini"));
+      |                                                [01;31m[K^~~~~~~[m[K
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/tfmini_ros/src/TFmini.cpp:15:85:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ at end of input
+   15 | ::string _name, int _baudRate) : logger_(rclcpp::get_logger("TFmini"))[01;31m[K;[m[K
+      |                                                                       [01;31m[K^[m[K
+
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/tfmini_ros/src/TFmini.cpp:[m[K At global scope:
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/tfmini_ros/src/TFmini.cpp:30:3:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kbenewake::TFmini::TFmini(std::string, int)[m[K’
+   30 |   [01;31m[KTFmini[m[K::TFmini(std::string _name, int _baudRate) :
+      |   [01;31m[K^~~~~~[m[K
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/tfmini_ros/src/TFmini.cpp:15:5:[m[K [01;36m[Knote: [m[K‘[01m[Kbenewake::TFmini::TFmini(std::string, int)[m[K’ previously defined here
+   15 |     [01;36m[KTFmini[m[K(std::string _name, int _baudRate) : logger_(rclcpp::get_logger("TFmini"));
+      |     [01;36m[K^~~~~~[m[K
+gmake[2]: *** [CMakeFiles/tfmini_ros_node.dir/build.make:90: CMakeFiles/tfmini_ros_node.dir/src/TFmini.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/tfmini_ros_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

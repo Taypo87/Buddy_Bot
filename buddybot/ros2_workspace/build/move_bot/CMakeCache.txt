@@ -25,7 +25,7 @@ AMENT_CMAKE_ENVIRONMENT_PARENT_PREFIX_PATH_GENERATION:BOOL=ON
 
 //Replace the CMake install command with a custom implementation
 // using symlinks instead of copying resources
-AMENT_CMAKE_SYMLINK_INSTALL:BOOL=OFF
+AMENT_CMAKE_SYMLINK_INSTALL:BOOL=1
 
 //Generate an uninstall target to revert the effects of the install
 // step
@@ -431,9 +431,6 @@ libstatistics_collector_DIR:PATH=/home/taylor/ros2_iron/install/libstatistics_co
 
 //Value Computed by CMake
 move_bot_BINARY_DIR:STATIC=/home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/move_bot
-
-//The directory containing a CMake configuration file for move_bot.
-move_bot_DIR:PATH=move_bot_DIR-NOTFOUND
 
 //Value Computed by CMake
 move_bot_IS_TOP_LEVEL:STATIC=ON
@@ -841,6 +838,8 @@ _Python3_INTERPRETER_SIGNATURE:INTERNAL=4c8bfa8951e99fa32e4000a94f8c04a2
 _Python3_Interpreter_REASON_FAILURE:INTERNAL=
 //NumPy reason failure
 _Python3_NumPy_REASON_FAILURE:INTERNAL=
+//Index for unique symlink install targets
+__AMENT_CMAKE_SYMLINK_INSTALL_TARGETS_INDEX:INTERNAL=4
 __pkg_config_arguments__OPENSSL:INTERNAL=QUIET;openssl
 __pkg_config_checked__OPENSSL:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib__OPENSSL_crypto

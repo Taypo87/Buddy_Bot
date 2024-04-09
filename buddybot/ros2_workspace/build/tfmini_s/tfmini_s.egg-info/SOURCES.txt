@@ -1,0 +1,13 @@
+package.xml
+setup.cfg
+setup.py
+resource/tfmini_s
+tfmini_s/__init__.py
+tfmini_s/tfmini_s_node.py
+tfmini_s.egg-info/PKG-INFO
+tfmini_s.egg-info/SOURCES.txt
+tfmini_s.egg-info/dependency_links.txt
+tfmini_s.egg-info/entry_points.txt
+tfmini_s.egg-info/requires.txt
+tfmini_s.egg-info/top_level.txt
+tfmini_s.egg-info/zip-safe

@@ -1,0 +1,19 @@
+{
+  "package_name": "move_bot",
+  "output_dir": "/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/move_bot/build/move_bot/rosidl_typesupport_introspection_c/move_bot",
+  "template_dir": "/home/taylor/ros2_iron/install/rosidl_typesupport_introspection_c/share/rosidl_typesupport_introspection_c/resource",
+  "idl_tuples": [
+    "/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/move_bot/build/move_bot/rosidl_adapter/move_bot:msg/Movement.idl"
+  ],
+  "target_dependencies": [
+    "/home/taylor/ros2_iron/install/rosidl_typesupport_introspection_c/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c",
+    "/home/taylor/ros2_iron/install/rosidl_typesupport_introspection_c/lib/python3.11/site-packages/rosidl_typesupport_introspection_c/__init__.py",
+    "/home/taylor/ros2_iron/install/rosidl_typesupport_introspection_c/share/rosidl_typesupport_introspection_c/resource/idl__rosidl_typesupport_introspection_c.h.em",
+    "/home/taylor/ros2_iron/install/rosidl_typesupport_introspection_c/share/rosidl_typesupport_introspection_c/resource/idl__type_support.c.em",
+    "/home/taylor/ros2_iron/install/rosidl_typesupport_introspection_c/share/rosidl_typesupport_introspection_c/resource/msg__rosidl_typesupport_introspection_c.h.em",
+    "/home/taylor/ros2_iron/install/rosidl_typesupport_introspection_c/share/rosidl_typesupport_introspection_c/resource/msg__type_support.c.em",
+    "/home/taylor/ros2_iron/install/rosidl_typesupport_introspection_c/share/rosidl_typesupport_introspection_c/resource/srv__rosidl_typesupport_introspection_c.h.em",
+    "/home/taylor/ros2_iron/install/rosidl_typesupport_introspection_c/share/rosidl_typesupport_introspection_c/resource/srv__type_support.c.em",
+    "/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/move_bot/build/move_bot/rosidl_adapter/move_bot/msg/Movement.idl"
+  ]
+}

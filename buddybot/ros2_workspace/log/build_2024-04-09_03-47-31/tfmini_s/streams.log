@@ -1,0 +1,28 @@
+[3.293s] Invoking command in '/home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/tfmini_s': PYTHONPATH=/home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/tfmini_s/prefix_override:/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/tfmini_s/lib/python3.11/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/tfmini_s/build --no-deps install_data
+[4.328s] running develop
+[4.329s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:146: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[4.329s]   warnings.warn(
+[4.410s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[4.411s]   warnings.warn(
+[4.846s] running egg_info
+[4.846s] creating tfmini_s.egg-info
+[4.882s] writing tfmini_s.egg-info/PKG-INFO
+[4.883s] writing dependency_links to tfmini_s.egg-info/dependency_links.txt
+[4.883s] writing entry points to tfmini_s.egg-info/entry_points.txt
+[4.884s] writing requirements to tfmini_s.egg-info/requires.txt
+[4.884s] writing top-level names to tfmini_s.egg-info/top_level.txt
+[4.884s] writing manifest file 'tfmini_s.egg-info/SOURCES.txt'
+[4.968s] reading manifest file 'tfmini_s.egg-info/SOURCES.txt'
+[4.969s] writing manifest file 'tfmini_s.egg-info/SOURCES.txt'
+[5.021s] running build_ext
+[5.021s] Creating /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/tfmini_s/lib/python3.11/site-packages/tfmini-s.egg-link (link to .)
+[5.023s] Installing tfmini_s_node script to /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/tfmini_s/lib/tfmini_s
+[5.023s] 
+[5.023s] Installed /home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/tfmini_s
+[5.023s] running install_data
+[5.024s] creating /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/tfmini_s/share/ament_index
+[5.024s] creating /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/tfmini_s/share/ament_index/resource_index
+[5.024s] creating /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/tfmini_s/share/ament_index/resource_index/packages
+[5.024s] copying resource/tfmini_s -> /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/tfmini_s/share/ament_index/resource_index/packages
+[5.024s] copying package.xml -> /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/tfmini_s/share/tfmini_s
+[5.248s] Invoked command in '/home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/tfmini_s' returned '0': PYTHONPATH=/home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/tfmini_s/prefix_override:/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/tfmini_s/lib/python3.11/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/tfmini_s/build --no-deps install_data

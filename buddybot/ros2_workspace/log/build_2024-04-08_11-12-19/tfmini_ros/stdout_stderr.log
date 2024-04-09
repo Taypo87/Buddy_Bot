@@ -1,0 +1,17 @@
+[ 33%] [32mBuilding CXX object CMakeFiles/tfmini_ros_node.dir/src/TFmini_ros_node.cpp.o[0m
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/tfmini_ros/src/TFmini_ros_node.cpp:[m[K In constructor ‘[01m[Kbenewake::TFmini::TFmini(std::string, int)[m[K’:
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/tfmini_ros/src/TFmini_ros_node.cpp:14:13:[m[K [01;31m[Kerror: [m[K‘[01m[KRCLCPP_ERROR_STREAM[m[K’ was not declared in this scope
+   14 |             [01;31m[KRCLCPP_ERROR_STREAM[m[K("Failed to open serial port!");
+      |             [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/tfmini_ros/src/TFmini_ros_node.cpp:21:13:[m[K [01;31m[Kerror: [m[K‘[01m[KRCLCPP_ERROR_STREAM[m[K’ was not declared in this scope
+   21 |             [01;31m[KRCLCPP_ERROR_STREAM[m[K("Can't get serial port sets!");
+      |             [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/tfmini_ros/src/TFmini_ros_node.cpp:72:17:[m[K [01;31m[Kerror: [m[K‘[01m[KRCLCPP_ERROR_STREAM[m[K’ was not declared in this scope
+   72 |                 [01;31m[KRCLCPP_ERROR_STREAM[m[K("Unsupported baud rate!");
+      |                 [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/tfmini_ros/src/TFmini_ros_node.cpp:85:13:[m[K [01;31m[Kerror: [m[K‘[01m[KRCLCPP_ERROR_STREAM[m[K’ was not declared in this scope
+   85 |             [01;31m[KRCLCPP_ERROR_STREAM[m[K("Can't set serial port options!");
+      |             [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/tfmini_ros_node.dir/build.make:76: CMakeFiles/tfmini_ros_node.dir/src/TFmini_ros_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/tfmini_ros_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

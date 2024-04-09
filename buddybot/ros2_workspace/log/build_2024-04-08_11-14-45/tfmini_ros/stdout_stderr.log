@@ -1,0 +1,117 @@
+[ 33%] [32mBuilding CXX object CMakeFiles/tfmini_ros_node.dir/src/TFmini_ros_node.cpp.o[0m
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/tfmini_ros/src/TFmini_ros_node.cpp:[m[K In constructor ‘[01m[Kbenewake::TFmini::TFmini(std::string, int)[m[K’:
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/tfmini_ros/src/TFmini_ros_node.cpp:28:35:[m[K [01;31m[Kerror: [m[K‘[01m[KO_RDWR[m[K’ was not declared in this scope
+   28 |     serial_ = open(_name.c_str(), [01;31m[KO_RDWR[m[K);
+      |                                   [01;31m[K^~~~~~[m[K
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/tfmini_ros/src/TFmini_ros_node.cpp:28:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kopen[m[K’ was not declared in this scope; did you mean ‘[01m[Kpopen[m[K’?
+   28 |     serial_ = [01;31m[Kopen[m[K(_name.c_str(), O_RDWR);
+      |               [01;31m[K^~~~[m[K
+      |               [32m[Kpopen[m[K
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/tfmini_ros/src/TFmini_ros_node.cpp:35:20:[m[K [01;31m[Kerror: [m[Kaggregate ‘[01m[Kbenewake::TFmini::TFmini(std::string, int)::termios options[m[K’ has incomplete type and cannot be defined
+   35 |     struct termios [01;31m[Koptions[m[K;
+      |                    [01;31m[K^~~~~~~[m[K
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/tfmini_ros/src/TFmini_ros_node.cpp:36:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ktcgetattr[m[K’ was not declared in this scope
+   36 |     if ([01;31m[Ktcgetattr[m[K(serial_, &options) != 0)
+      |         [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/tfmini_ros/src/TFmini_ros_node.cpp:41:22:[m[K [01;31m[Kerror: [m[K‘[01m[KTCIFLUSH[m[K’ was not declared in this scope
+   41 |     tcflush(serial_, [01;31m[KTCIFLUSH[m[K);
+      |                      [01;31m[K^~~~~~~~[m[K
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/tfmini_ros/src/TFmini_ros_node.cpp:41:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktcflush[m[K’ was not declared in this scope; did you mean ‘[01m[Kfflush[m[K’?
+   41 |     [01;31m[Ktcflush[m[K(serial_, TCIFLUSH);
+      |     [01;31m[K^~~~~~~[m[K
+      |     [32m[Kfflush[m[K
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/tfmini_ros/src/TFmini_ros_node.cpp:45:31:[m[K [01;31m[Kerror: [m[K‘[01m[KB921600[m[K’ was not declared in this scope
+   45 |         cfsetispeed(&options, [01;31m[KB921600[m[K);
+      |                               [01;31m[K^~~~~~~[m[K
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/tfmini_ros/src/TFmini_ros_node.cpp:45:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcfsetispeed[m[K’ was not declared in this scope
+   45 |         [01;31m[Kcfsetispeed[m[K(&options, B921600);
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/tfmini_ros/src/TFmini_ros_node.cpp:46:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcfsetospeed[m[K’ was not declared in this scope
+   46 |         [01;31m[Kcfsetospeed[m[K(&options, B921600);
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/tfmini_ros/src/TFmini_ros_node.cpp:49:31:[m[K [01;31m[Kerror: [m[K‘[01m[KB576000[m[K’ was not declared in this scope
+   49 |         cfsetispeed(&options, [01;31m[KB576000[m[K);
+      |                               [01;31m[K^~~~~~~[m[K
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/tfmini_ros/src/TFmini_ros_node.cpp:53:31:[m[K [01;31m[Kerror: [m[K‘[01m[KB500000[m[K’ was not declared in this scope
+   53 |         cfsetispeed(&options, [01;31m[KB500000[m[K);
+      |                               [01;31m[K^~~~~~~[m[K
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/tfmini_ros/src/TFmini_ros_node.cpp:57:31:[m[K [01;31m[Kerror: [m[K‘[01m[KB460800[m[K’ was not declared in this scope
+   57 |         cfsetispeed(&options, [01;31m[KB460800[m[K);
+      |                               [01;31m[K^~~~~~~[m[K
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/tfmini_ros/src/TFmini_ros_node.cpp:61:31:[m[K [01;31m[Kerror: [m[K‘[01m[KB230400[m[K’ was not declared in this scope
+   61 |         cfsetispeed(&options, [01;31m[KB230400[m[K);
+      |                               [01;31m[K^~~~~~~[m[K
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/tfmini_ros/src/TFmini_ros_node.cpp:65:31:[m[K [01;31m[Kerror: [m[K‘[01m[KB115200[m[K’ was not declared in this scope
+   65 |         cfsetispeed(&options, [01;31m[KB115200[m[K);
+      |                               [01;31m[K^~~~~~~[m[K
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/tfmini_ros/src/TFmini_ros_node.cpp:69:31:[m[K [01;31m[Kerror: [m[K‘[01m[KB57600[m[K’ was not declared in this scope
+   69 |         cfsetispeed(&options, [01;31m[KB57600[m[K);
+      |                               [01;31m[K^~~~~~[m[K
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/tfmini_ros/src/TFmini_ros_node.cpp:73:31:[m[K [01;31m[Kerror: [m[K‘[01m[KB38400[m[K’ was not declared in this scope
+   73 |         cfsetispeed(&options, [01;31m[KB38400[m[K);
+      |                               [01;31m[K^~~~~~[m[K
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/tfmini_ros/src/TFmini_ros_node.cpp:77:31:[m[K [01;31m[Kerror: [m[K‘[01m[KB19200[m[K’ was not declared in this scope
+   77 |         cfsetispeed(&options, [01;31m[KB19200[m[K);
+      |                               [01;31m[K^~~~~~[m[K
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/tfmini_ros/src/TFmini_ros_node.cpp:81:31:[m[K [01;31m[Kerror: [m[K‘[01m[KB9600[m[K’ was not declared in this scope
+   81 |         cfsetispeed(&options, [01;31m[KB9600[m[K);
+      |                               [01;31m[K^~~~~[m[K
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/tfmini_ros/src/TFmini_ros_node.cpp:85:31:[m[K [01;31m[Kerror: [m[K‘[01m[KB4800[m[K’ was not declared in this scope
+   85 |         cfsetispeed(&options, [01;31m[KB4800[m[K);
+      |                               [01;31m[K^~~~~[m[K
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/tfmini_ros/src/TFmini_ros_node.cpp:92:26:[m[K [01;31m[Kerror: [m[K‘[01m[KICANON[m[K’ was not declared in this scope
+   92 |     options.c_lflag &= ~([01;31m[KICANON[m[K | ECHO | ECHOE | ISIG);
+      |                          [01;31m[K^~~~~~[m[K
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/tfmini_ros/src/TFmini_ros_node.cpp:92:35:[m[K [01;31m[Kerror: [m[K‘[01m[KECHO[m[K’ was not declared in this scope
+   92 |     options.c_lflag &= ~(ICANON | [01;31m[KECHO[m[K | ECHOE | ISIG);
+      |                                   [01;31m[K^~~~[m[K
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/tfmini_ros/src/TFmini_ros_node.cpp:92:42:[m[K [01;31m[Kerror: [m[K‘[01m[KECHOE[m[K’ was not declared in this scope
+   92 |     options.c_lflag &= ~(ICANON | ECHO | [01;31m[KECHOE[m[K | ISIG);
+      |                                          [01;31m[K^~~~~[m[K
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/tfmini_ros/src/TFmini_ros_node.cpp:92:50:[m[K [01;31m[Kerror: [m[K‘[01m[KISIG[m[K’ was not declared in this scope; did you mean ‘[01m[KNSIG[m[K’?
+   92 |     options.c_lflag &= ~(ICANON | ECHO | ECHOE | [01;31m[KISIG[m[K);
+      |                                                  [01;31m[K^~~~[m[K
+      |                                                  [32m[KNSIG[m[K
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/tfmini_ros/src/TFmini_ros_node.cpp:93:25:[m[K [01;31m[Kerror: [m[K‘[01m[KOPOST[m[K’ was not declared in this scope
+   93 |     options.c_oflag &= ~[01;31m[KOPOST[m[K;
+      |                         [01;31m[K^~~~~[m[K
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/tfmini_ros/src/TFmini_ros_node.cpp:94:26:[m[K [01;31m[Kerror: [m[K‘[01m[KIXON[m[K’ was not declared in this scope
+   94 |     options.c_iflag &= ~([01;31m[KIXON[m[K | IXOFF | IXANY);
+      |                          [01;31m[K^~~~[m[K
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/tfmini_ros/src/TFmini_ros_node.cpp:94:33:[m[K [01;31m[Kerror: [m[K‘[01m[KIXOFF[m[K’ was not declared in this scope
+   94 |     options.c_iflag &= ~(IXON | [01;31m[KIXOFF[m[K | IXANY);
+      |                                 [01;31m[K^~~~~[m[K
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/tfmini_ros/src/TFmini_ros_node.cpp:94:41:[m[K [01;31m[Kerror: [m[K‘[01m[KIXANY[m[K’ was not declared in this scope
+   94 |     options.c_iflag &= ~(IXON | IXOFF | [01;31m[KIXANY[m[K);
+      |                                         [01;31m[K^~~~~[m[K
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/tfmini_ros/src/TFmini_ros_node.cpp:95:26:[m[K [01;31m[Kerror: [m[K‘[01m[KINLCR[m[K’ was not declared in this scope
+   95 |     options.c_iflag &= ~([01;31m[KINLCR[m[K | ICRNL | IGNCR);
+      |                          [01;31m[K^~~~~[m[K
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/tfmini_ros/src/TFmini_ros_node.cpp:95:34:[m[K [01;31m[Kerror: [m[K‘[01m[KICRNL[m[K’ was not declared in this scope
+   95 |     options.c_iflag &= ~(INLCR | [01;31m[KICRNL[m[K | IGNCR);
+      |                                  [01;31m[K^~~~~[m[K
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/tfmini_ros/src/TFmini_ros_node.cpp:95:42:[m[K [01;31m[Kerror: [m[K‘[01m[KIGNCR[m[K’ was not declared in this scope
+   95 |     options.c_iflag &= ~(INLCR | ICRNL | [01;31m[KIGNCR[m[K);
+      |                                          [01;31m[K^~~~~[m[K
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/tfmini_ros/src/TFmini_ros_node.cpp:96:26:[m[K [01;31m[Kerror: [m[K‘[01m[KONLCR[m[K’ was not declared in this scope
+   96 |     options.c_oflag &= ~([01;31m[KONLCR[m[K | OCRNL);
+      |                          [01;31m[K^~~~~[m[K
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/tfmini_ros/src/TFmini_ros_node.cpp:96:34:[m[K [01;31m[Kerror: [m[K‘[01m[KOCRNL[m[K’ was not declared in this scope
+   96 |     options.c_oflag &= ~(ONLCR | [01;31m[KOCRNL[m[K);
+      |                                  [01;31m[K^~~~~[m[K
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/tfmini_ros/src/TFmini_ros_node.cpp:97:28:[m[K [01;31m[Kerror: [m[K‘[01m[KTCSANOW[m[K’ was not declared in this scope
+   97 |     if (tcsetattr(serial_, [01;31m[KTCSANOW[m[K, &options) != 0)
+      |                            [01;31m[K^~~~~~~[m[K
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/tfmini_ros/src/TFmini_ros_node.cpp:97:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ktcsetattr[m[K’ was not declared in this scope
+   97 |     if ([01;31m[Ktcsetattr[m[K(serial_, TCSANOW, &options) != 0)
+      |         [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/tfmini_ros/src/TFmini_ros_node.cpp:[m[K In member function ‘[01m[Kfloat benewake::TFmini::getDist()[m[K’:
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/tfmini_ros/src/TFmini_ros_node.cpp:125:20:[m[K [01;31m[Kerror: [m[K‘[01m[KdataBuf[m[K’ was not declared in this scope
+  125 |       if (readData([01;31m[KdataBuf[m[K, 2))
+      |                    [01;31m[K^~~~~~~[m[K
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/tfmini_ros/src/TFmini_ros_node.cpp:136:18:[m[K [01;31m[Kerror: [m[K‘[01m[KdataBuf[m[K’ was not declared in this scope
+  136 |     if (readData([01;31m[KdataBuf[m[K, 7))
+      |                  [01;31m[K^~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/tfmini_ros_node.dir/build.make:76: CMakeFiles/tfmini_ros_node.dir/src/TFmini_ros_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/tfmini_ros_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

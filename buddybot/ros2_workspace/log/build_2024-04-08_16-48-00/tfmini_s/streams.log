@@ -1,0 +1,26 @@
+[3.329s] Invoking command in '/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/tfmini_s': PYTHONPATH=/home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/tfmini_s/prefix_override:/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/tfmini_s/lib/python3.11/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/tfmini_s build --build-base /home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/tfmini_s/build install --record /home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/tfmini_s/install.log --single-version-externally-managed
+[4.233s] running egg_info
+[4.266s] writing ../../build/tfmini_s/tfmini_s.egg-info/PKG-INFO
+[4.267s] writing dependency_links to ../../build/tfmini_s/tfmini_s.egg-info/dependency_links.txt
+[4.268s] writing entry points to ../../build/tfmini_s/tfmini_s.egg-info/entry_points.txt
+[4.270s] writing requirements to ../../build/tfmini_s/tfmini_s.egg-info/requires.txt
+[4.271s] writing top-level names to ../../build/tfmini_s/tfmini_s.egg-info/top_level.txt
+[4.351s] reading manifest file '../../build/tfmini_s/tfmini_s.egg-info/SOURCES.txt'
+[4.351s] writing manifest file '../../build/tfmini_s/tfmini_s.egg-info/SOURCES.txt'
+[4.351s] running build
+[4.351s] running build_py
+[4.351s] copying tfmini_s/tfmini_s_node.py -> /home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/tfmini_s/build/lib/tfmini_s
+[4.352s] running install
+[4.352s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[4.352s]   warnings.warn(
+[4.362s] running install_lib
+[4.398s] copying /home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/tfmini_s/build/lib/tfmini_s/tfmini_s_node.py -> /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/tfmini_s/lib/python3.11/site-packages/tfmini_s
+[4.402s] byte-compiling /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/tfmini_s/lib/python3.11/site-packages/tfmini_s/tfmini_s_node.py to tfmini_s_node.cpython-311.pyc
+[4.402s] running install_data
+[4.444s] running install_egg_info
+[4.547s] removing '/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/tfmini_s/lib/python3.11/site-packages/tfmini_s-0.0.0-py3.11.egg-info' (and everything under it)
+[4.549s] Copying ../../build/tfmini_s/tfmini_s.egg-info to /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/tfmini_s/lib/python3.11/site-packages/tfmini_s-0.0.0-py3.11.egg-info
+[4.549s] running install_scripts
+[4.703s] Installing tfmini_s_node script to /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/tfmini_s/lib/tfmini_s
+[4.703s] writing list of installed files to '/home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/tfmini_s/install.log'
+[4.857s] Invoked command in '/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/tfmini_s' returned '0': PYTHONPATH=/home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/tfmini_s/prefix_override:/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/tfmini_s/lib/python3.11/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/tfmini_s build --build-base /home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/tfmini_s/build install --record /home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/tfmini_s/install.log --single-version-externally-managed
