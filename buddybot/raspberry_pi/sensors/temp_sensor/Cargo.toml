@@ -3,7 +3,14 @@ name = "temp_sensor"
 version = "0.1.0"
 edition = "2021"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ["cdylib"]
+
+
 
 [dependencies]
 dht11_gpio = "0.1.0"
+mongodb = "2.8.2"
+serde = "1.0.197"
+tokio = "1.37.0"
