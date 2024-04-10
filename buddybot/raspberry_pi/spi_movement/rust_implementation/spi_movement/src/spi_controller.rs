@@ -1,9 +1,8 @@
 extern crate spidev;
 
-use spidev::{Spidev, SpidevOptions, SPI_MODE_0};
+use spidev::{Spidev, SpidevOptions, SpiModeFlags};
 use std::io;
-use std::os::unix::io::AsRawFd;
-use libc::write;
+use std::io::Write;
 
 const SPEED: u32 = 1_000_000; // 1 MHz
 const BITS_PER_WORD: u8 = 8;
@@ -46,21 +45,15 @@ impl SpiController {
         let options = SpidevOptions::new()
             .bits_per_word(BITS_PER_WORD)
             .max_speed_hz(SPEED)
-            .mode(SPI_MODE_0)
+            .mode(SpiModeFlags::SPI_MODE_0)
             .build();
         spi.configure(&options)?;
         Ok(SpiController { spi })
     }
 
-    pub fn send_command(&self, command: MovementCommand, speed: u8) -> io::Result<()> {
+    pub fn send_command(&mut self, command: MovementCommand, speed: u8) -> io::Result<()> {
         let packet = CmdPacket::new(command, speed);
-        let fd = self.spi.as_raw_fd();
-        let bytes_written = unsafe {
-            write(fd, &packet as *const _ as *const libc::c_void, std::mem::size_of::<CmdPacket>())
-        };
-        if bytes_written < 0 {
-            return Err(io::Error::last_os_error());
-        }
+        self.spi.write(&[packet.command])?;
         Ok(())
     }
 }

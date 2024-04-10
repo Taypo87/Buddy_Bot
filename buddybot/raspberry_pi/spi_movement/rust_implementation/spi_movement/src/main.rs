@@ -1,8 +1,6 @@
 extern crate sdl2;
 mod spi_controller;
 
-use sdl2::joystick::Joystick;
-use sdl2::EventPump;
 use spi_controller::{MovementCommand, SpiController};
 use std::error::Error;
 use std::thread;
@@ -18,16 +16,14 @@ fn main() -> Result<(), Box<dyn Error>> {
     let sdl_context = sdl2::init()?;
     let joystick_subsystem = sdl_context.joystick()?;
 
-    let joystick = Joystick::open(&joystick_subsystem, 0)?;
+    let joystick = joystick_subsystem.open(0)?;
     let mut event_pump = sdl_context.event_pump()?;
-    let spi_controller = SpiController::new("/dev/spidev0.0")?;
+    let mut spi_controller = SpiController::new("/dev/spidev0.0")?;
 
     let mut prev_axis_value_x = 0;
     let mut prev_axis_value_y = 0;
 
     'running: loop {
-        joystick.update();
-
         let axis_value_x = joystick.axis(0)?;
         let axis_value_y = joystick.axis(1)?;
 
