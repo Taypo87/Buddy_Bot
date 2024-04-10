@@ -1,0 +1,2 @@
+[console_scripts]
+tfmini_s_node = tfmini_s.tfmini_s_node:main

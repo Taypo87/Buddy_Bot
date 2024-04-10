@@ -1,0 +1,33 @@
+[0.069s] Invoking command in '/home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/mpu': /usr/bin/cmake /home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/MPU -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/mpu
+[0.226s] -- The C compiler identification is GNU 12.2.0
+[0.341s] -- The CXX compiler identification is GNU 12.2.0
+[0.368s] -- Detecting C compiler ABI info
+[0.582s] -- Detecting C compiler ABI info - done
+[0.601s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.608s] -- Detecting C compile features
+[0.609s] -- Detecting C compile features - done
+[0.618s] -- Detecting CXX compiler ABI info
+[0.851s] -- Detecting CXX compiler ABI info - done
+[0.879s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.879s] -- Detecting CXX compile features
+[0.879s] -- Detecting CXX compile features - done
+[0.896s] -- Found ament_cmake: 2.0.4 (/home/taylor/ros2_iron/install/ament_cmake/share/ament_cmake/cmake)
+[3.162s] -- Found Python3: /usr/bin/python3 (found version "3.11.2") found components: Interpreter 
+[3.727s] -- Found rclpy: 4.1.4 (/home/taylor/ros2_iron/install/rclpy/share/rclpy/cmake)
+[3.734s] -- Found std_msgs: 5.0.0 (/home/taylor/ros2_iron/install/std_msgs/share/std_msgs/cmake)
+[3.908s] -- Found rosidl_generator_c: 4.0.1 (/home/taylor/ros2_iron/install/rosidl_generator_c/share/rosidl_generator_c/cmake)
+[3.963s] -- Found rosidl_generator_cpp: 4.0.1 (/home/taylor/ros2_iron/install/rosidl_generator_cpp/share/rosidl_generator_cpp/cmake)
+[4.078s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_introspection_c;rosidl_typesupport_fastrtps_c
+[4.196s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_introspection_cpp;rosidl_typesupport_fastrtps_cpp
+[4.815s] -- Configuring incomplete, errors occurred!
+[4.816s] See also "/home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/mpu/CMakeFiles/CMakeOutput.log".
+[4.816s] [31mCMake Error at /home/taylor/ros2_iron/install/ament_cmake_python/share/ament_cmake_python/cmake/ament_python_install_package.cmake:66 (message):
+[4.816s]   ament_python_install_package() the Python package folder
+[4.816s]   '/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/MPU/mpu' doesn't
+[4.816s]   contain an '__init__.py' file
+[4.816s] Call Stack (most recent call first):
+[4.816s]   /home/taylor/ros2_iron/install/ament_cmake_python/share/ament_cmake_python/cmake/ament_python_install_package.cmake:39 (_ament_cmake_python_install_package)
+[4.816s]   CMakeLists.txt:27 (ament_python_install_package)
+[4.816s] 
+[4.816s] [0m
+[4.835s] Invoked command in '/home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/mpu' returned '1': /usr/bin/cmake /home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/MPU -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/mpu

@@ -1,0 +1,76 @@
+-- Found cv_bridge: 3.4.0 (/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/cv_bridge/share/cv_bridge/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rosidl_generator_c: 4.0.1 (/home/taylor/ros2_iron/install/rosidl_generator_c/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.0.1 (/home/taylor/ros2_iron/install/rosidl_generator_cpp/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_introspection_c;rosidl_typesupport_fastrtps_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_introspection_cpp;rosidl_typesupport_fastrtps_cpp
+-- Found rmw_implementation_cmake: 7.1.0 (/home/taylor/ros2_iron/install/rmw_implementation_cmake/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 7.1.3 (/home/taylor/ros2_iron/install/rmw_fastrtps_cpp/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found image_transport: 4.2.4 (/home/taylor/ros2_iron/install/image_transport/share/image_transport/cmake)
+-- Found nav_msgs: 5.0.0 (/home/taylor/ros2_iron/install/nav_msgs/share/nav_msgs/cmake)
+-- Found rclcpp_components: 21.0.5 (/home/taylor/ros2_iron/install/rclcpp_components/share/rclcpp_components/cmake)
+-- Found rtabmap_conversions: 0.21.4 (/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/rtabmap_conversions/share/rtabmap_conversions/cmake)
+-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+-- Found flann version 1.9.2
+-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)
+-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)
+-- Found Qhull version 8.0.2
+-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[33mCMake Warning (dev) at /usr/share/cmake-3.25/Modules/CMakeFindDependencyMacro.cmake:47 (find_package):
+  Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.
+  Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  CMake variable PCL_ROOT is set to:
+
+    /usr
+
+  For compatibility, CMake is ignoring the variable.
+Call Stack (most recent call first):
+  /usr/local/lib/rtabmap-0.21/RTABMapConfig.cmake:7 (find_dependency)
+  /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/rtabmap_conversions/share/rtabmap_conversions/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/rtabmap_conversions/share/rtabmap_conversions/cmake/rtabmap_conversionsConfig.cmake:41 (include)
+  CMakeLists.txt:10 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+-- Found diagnostic_updater: 3.2.0 (/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/diagnostic_updater/share/diagnostic_updater/cmake)
+-- RTABMAP_SYNC_MULTI_RGBD = OFF
+-- RTABMAP_SYNC_USER_DATA  = OFF
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/rtabmap_sync
+[  4%] [32mBuilding CXX object CMakeFiles/rtabmap_sync.dir/src/CommonDataSubscriber.cpp.o[0m
+In file included from [01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/rtabmap_ros/rtabmap_sync/include/rtabmap_sync/CommonDataSubscriber.h:40[m[K,
+                 from [01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/rtabmap_ros/rtabmap_sync/src/CommonDataSubscriber.cpp:28[m[K:
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/cv_bridge/include/cv_bridge/cv_bridge/cv_bridge.h:42:2:[m[K [01;35m[Kwarning: [m[K#warning This header is obsolete, please include cv_bridge/cv_bridge.hpp instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+   42 | #[01;35m[Kwarning[m[K This header is obsolete, please include cv_bridge/cv_bridge.hpp instead
+      |  [01;35m[K^~~~~~~[m[K
+[  8%] [32mBuilding CXX object CMakeFiles/rtabmap_sync.dir/src/impl/CommonDataSubscriberStereo.cpp.o[0m
+In file included from [01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/rtabmap_ros/rtabmap_sync/include/rtabmap_sync/CommonDataSubscriber.h:40[m[K,
+                 from [01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/rtabmap_ros/rtabmap_sync/src/impl/CommonDataSubscriberStereo.cpp:28[m[K:
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/cv_bridge/include/cv_bridge/cv_bridge/cv_bridge.h:42:2:[m[K [01;35m[Kwarning: [m[K#warning This header is obsolete, please include cv_bridge/cv_bridge.hpp instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+   42 | #[01;35m[Kwarning[m[K This header is obsolete, please include cv_bridge/cv_bridge.hpp instead
+      |  [01;35m[K^~~~~~~[m[K
+[ 13%] [32mBuilding CXX object CMakeFiles/rtabmap_sync.dir/src/impl/CommonDataSubscriberRGB.cpp.o[0m
+In file included from [01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/rtabmap_ros/rtabmap_sync/include/rtabmap_sync/CommonDataSubscriber.h:40[m[K,
+                 from [01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/rtabmap_ros/rtabmap_sync/src/impl/CommonDataSubscriberRGB.cpp:28[m[K:
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/cv_bridge/include/cv_bridge/cv_bridge/cv_bridge.h:42:2:[m[K [01;35m[Kwarning: [m[K#warning This header is obsolete, please include cv_bridge/cv_bridge.hpp instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+   42 | #[01;35m[Kwarning[m[K This header is obsolete, please include cv_bridge/cv_bridge.hpp instead
+      |  [01;35m[K^~~~~~~[m[K
+[ 17%] [32mBuilding CXX object CMakeFiles/rtabmap_sync.dir/src/impl/CommonDataSubscriberRGBD.cpp.o[0m
+In file included from [01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/rtabmap_ros/rtabmap_sync/include/rtabmap_sync/CommonDataSubscriber.h:40[m[K,
+                 from [01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/rtabmap_ros/rtabmap_sync/src/impl/CommonDataSubscriberRGBD.cpp:28[m[K:
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/cv_bridge/include/cv_bridge/cv_bridge/cv_bridge.h:42:2:[m[K [01;35m[Kwarning: [m[K#warning This header is obsolete, please include cv_bridge/cv_bridge.hpp instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+   42 | #[01;35m[Kwarning[m[K This header is obsolete, please include cv_bridge/cv_bridge.hpp instead
+      |  [01;35m[K^~~~~~~[m[K
+[ 21%] [32mBuilding CXX object CMakeFiles/rtabmap_sync.dir/src/impl/CommonDataSubscriberDepth.cpp.o[0m
+In file included from [01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/rtabmap_ros/rtabmap_sync/include/rtabmap_sync/CommonDataSubscriber.h:40[m[K,
+                 from [01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/rtabmap_ros/rtabmap_sync/src/impl/CommonDataSubscriberDepth.cpp:28[m[K:
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/cv_bridge/include/cv_bridge/cv_bridge/cv_bridge.h:42:2:[m[K [01;35m[Kwarning: [m[K#warning This header is obsolete, please include cv_bridge/cv_bridge.hpp instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+   42 | #[01;35m[Kwarning[m[K This header is obsolete, please include cv_bridge/cv_bridge.hpp instead
+      |  [01;35m[K^~~~~~~[m[K

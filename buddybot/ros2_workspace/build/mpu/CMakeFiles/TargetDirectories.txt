@@ -1,0 +1,11 @@
+/home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/mpu/CMakeFiles/uninstall.dir
+/home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/mpu/CMakeFiles/mpu_uninstall.dir
+/home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/mpu/CMakeFiles/ament_cmake_python_copy_mpu.dir
+/home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/mpu/CMakeFiles/ament_cmake_python_build_mpu_egg.dir
+/home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/mpu/CMakeFiles/test.dir
+/home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/mpu/CMakeFiles/edit_cache.dir
+/home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/mpu/CMakeFiles/rebuild_cache.dir
+/home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/mpu/CMakeFiles/list_install_components.dir
+/home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/mpu/CMakeFiles/install.dir
+/home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/mpu/CMakeFiles/install/local.dir
+/home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/mpu/CMakeFiles/install/strip.dir

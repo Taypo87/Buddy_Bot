@@ -1,0 +1,25 @@
+[0.074s] Invoking command in '/home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/mpu_sensor_package': /usr/bin/cmake /home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/MPU -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/mpu_sensor_package
+[0.666s] -- The C compiler identification is GNU 12.2.0
+[1.180s] -- The CXX compiler identification is GNU 12.2.0
+[1.232s] -- Detecting C compiler ABI info
+[1.577s] -- Detecting C compiler ABI info - done
+[1.593s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.593s] -- Detecting C compile features
+[1.593s] -- Detecting C compile features - done
+[1.605s] -- Detecting CXX compiler ABI info
+[1.973s] -- Detecting CXX compiler ABI info - done
+[1.988s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.988s] -- Detecting CXX compile features
+[1.988s] -- Detecting CXX compile features - done
+[2.015s] -- Found ament_cmake: 2.0.4 (/home/taylor/ros2_iron/install/ament_cmake/share/ament_cmake/cmake)
+[4.259s] -- Found Python3: /usr/bin/python3 (found version "3.11.2") found components: Interpreter 
+[4.871s] -- Configuring incomplete, errors occurred!
+[4.874s] [31mCMake Error at /home/taylor/ros2_iron/install/ament_cmake_target_dependencies/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:77 (message):
+[4.876s]   ament_target_dependencies() the passed package name 'rclcpp' was not found
+[4.876s]   before
+[4.876s] Call Stack (most recent call first):
+[4.876s]   CMakeLists.txt:16 (ament_target_dependencies)
+[4.876s] 
+[4.876s] [0m
+[4.876s] See also "/home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/mpu_sensor_package/CMakeFiles/CMakeOutput.log".
+[4.885s] Invoked command in '/home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/mpu_sensor_package' returned '1': /usr/bin/cmake /home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/MPU -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/mpu_sensor_package

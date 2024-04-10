@@ -1,0 +1,30 @@
+[3.977s] Invoking command in '/home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/opencv_tests': AMENT_PREFIX_PATH=/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/cv_bridge:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/cv_bridge/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/opencv_tests/prefix_override:/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/opencv_tests/lib/python3.11/site-packages:/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/cv_bridge/lib/python3.11/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/opencv_tests/build --no-deps install_data
+[5.917s] running develop
+[5.917s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:146: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[5.917s]   warnings.warn(
+[6.019s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[6.019s]   warnings.warn(
+[6.560s] running egg_info
+[6.565s] creating opencv_tests.egg-info
+[6.609s] writing opencv_tests.egg-info/PKG-INFO
+[6.611s] writing dependency_links to opencv_tests.egg-info/dependency_links.txt
+[6.611s] writing entry points to opencv_tests.egg-info/entry_points.txt
+[6.612s] writing requirements to opencv_tests.egg-info/requires.txt
+[6.612s] writing top-level names to opencv_tests.egg-info/top_level.txt
+[6.612s] writing manifest file 'opencv_tests.egg-info/SOURCES.txt'
+[6.703s] reading manifest file 'opencv_tests.egg-info/SOURCES.txt'
+[6.706s] writing manifest file 'opencv_tests.egg-info/SOURCES.txt'
+[6.828s] running build_ext
+[6.829s] Creating /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/opencv_tests/lib/python3.11/site-packages/opencv-tests.egg-link (link to .)
+[6.831s] Installing broadcast script to /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/opencv_tests/lib/opencv_tests
+[6.831s] Installing rosfacedetect script to /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/opencv_tests/lib/opencv_tests
+[6.839s] Installing source script to /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/opencv_tests/lib/opencv_tests
+[6.839s] 
+[6.839s] Installed /home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/opencv_tests
+[6.839s] running install_data
+[6.839s] creating /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/opencv_tests/share/ament_index
+[6.839s] creating /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/opencv_tests/share/ament_index/resource_index
+[6.839s] creating /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/opencv_tests/share/ament_index/resource_index/packages
+[6.839s] copying resource/opencv_tests -> /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/opencv_tests/share/ament_index/resource_index/packages
+[6.839s] copying package.xml -> /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/opencv_tests/share/opencv_tests
+[7.158s] Invoked command in '/home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/opencv_tests' returned '0': AMENT_PREFIX_PATH=/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/cv_bridge:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/cv_bridge/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/opencv_tests/prefix_override:/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/opencv_tests/lib/python3.11/site-packages:/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/cv_bridge/lib/python3.11/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/opencv_tests/build --no-deps install_data

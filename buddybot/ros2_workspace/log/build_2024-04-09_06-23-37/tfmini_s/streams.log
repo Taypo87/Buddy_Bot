@@ -1,0 +1,21 @@
+[5.582s] Invoking command in '/home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/tfmini_s': PYTHONPATH=/home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/tfmini_s/prefix_override:/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/tfmini_s/lib/python3.11/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/tfmini_s/build --no-deps install_data
+[7.316s] running develop
+[7.317s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:146: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[7.318s]   warnings.warn(
+[7.446s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[7.446s]   warnings.warn(
+[8.206s] running egg_info
+[8.264s] writing tfmini_s.egg-info/PKG-INFO
+[8.265s] writing dependency_links to tfmini_s.egg-info/dependency_links.txt
+[8.267s] writing entry points to tfmini_s.egg-info/entry_points.txt
+[8.268s] writing requirements to tfmini_s.egg-info/requires.txt
+[8.269s] writing top-level names to tfmini_s.egg-info/top_level.txt
+[8.410s] reading manifest file 'tfmini_s.egg-info/SOURCES.txt'
+[8.413s] writing manifest file 'tfmini_s.egg-info/SOURCES.txt'
+[8.498s] running build_ext
+[8.498s] Creating /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/tfmini_s/lib/python3.11/site-packages/tfmini-s.egg-link (link to .)
+[8.501s] Installing tfmini_s_node script to /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/tfmini_s/lib/tfmini_s
+[8.501s] 
+[8.501s] Installed /home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/tfmini_s
+[8.502s] running install_data
+[8.746s] Invoked command in '/home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/tfmini_s' returned '0': PYTHONPATH=/home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/tfmini_s/prefix_override:/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/tfmini_s/lib/python3.11/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/tfmini_s/build --no-deps install_data

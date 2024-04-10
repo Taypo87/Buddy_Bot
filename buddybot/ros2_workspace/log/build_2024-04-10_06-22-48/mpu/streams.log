@@ -1,0 +1,20 @@
+[0.078s] Invoking command in '/home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/mpu': /usr/bin/cmake /home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/MPU -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/mpu
+[0.121s] -- Found ament_cmake: 2.0.4 (/home/taylor/ros2_iron/install/ament_cmake/share/ament_cmake/cmake)
+[0.704s] -- Found rclpy: 4.1.4 (/home/taylor/ros2_iron/install/rclpy/share/rclpy/cmake)
+[0.704s] -- Found std_msgs: 5.0.0 (/home/taylor/ros2_iron/install/std_msgs/share/std_msgs/cmake)
+[0.748s] -- Found rosidl_generator_c: 4.0.1 (/home/taylor/ros2_iron/install/rosidl_generator_c/share/rosidl_generator_c/cmake)
+[0.763s] -- Found rosidl_generator_cpp: 4.0.1 (/home/taylor/ros2_iron/install/rosidl_generator_cpp/share/rosidl_generator_cpp/cmake)
+[0.844s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_introspection_c;rosidl_typesupport_fastrtps_c
+[1.009s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_introspection_cpp;rosidl_typesupport_fastrtps_cpp
+[1.827s] -- Configuring incomplete, errors occurred!
+[1.828s] See also "/home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/mpu/CMakeFiles/CMakeOutput.log".
+[1.841s] [31mCMake Error at /home/taylor/ros2_iron/install/ament_cmake_python/share/ament_cmake_python/cmake/ament_python_install_package.cmake:66 (message):
+[1.842s]   ament_python_install_package() the Python package folder
+[1.842s]   '/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/MPU/mpu' doesn't
+[1.842s]   contain an '__init__.py' file
+[1.842s] Call Stack (most recent call first):
+[1.843s]   /home/taylor/ros2_iron/install/ament_cmake_python/share/ament_cmake_python/cmake/ament_python_install_package.cmake:39 (_ament_cmake_python_install_package)
+[1.843s]   CMakeLists.txt:27 (ament_python_install_package)
+[1.843s] 
+[1.843s] [0m
+[1.869s] Invoked command in '/home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/mpu' returned '1': /usr/bin/cmake /home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/MPU -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/mpu

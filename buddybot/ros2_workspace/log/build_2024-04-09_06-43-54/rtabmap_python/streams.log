@@ -1,0 +1,19 @@
+[5.400s] Invoking command in '/home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/rtabmap_python': PYTHONPATH=/home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/rtabmap_python/prefix_override:/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/rtabmap_python/lib/python3.11/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/rtabmap_python/build --no-deps install_data
+[7.097s] running develop
+[7.098s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:146: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[7.101s]   warnings.warn(
+[7.319s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[7.320s]   warnings.warn(
+[8.242s] running egg_info
+[8.297s] writing rtabmap_python.egg-info/PKG-INFO
+[8.298s] writing dependency_links to rtabmap_python.egg-info/dependency_links.txt
+[8.300s] writing requirements to rtabmap_python.egg-info/requires.txt
+[8.304s] writing top-level names to rtabmap_python.egg-info/top_level.txt
+[8.420s] reading manifest file 'rtabmap_python.egg-info/SOURCES.txt'
+[8.422s] writing manifest file 'rtabmap_python.egg-info/SOURCES.txt'
+[8.478s] running build_ext
+[8.478s] Creating /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/rtabmap_python/lib/python3.11/site-packages/rtabmap-python.egg-link (link to .)
+[8.480s] 
+[8.480s] Installed /home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/rtabmap_python
+[8.480s] running install_data
+[8.966s] Invoked command in '/home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/rtabmap_python' returned '0': PYTHONPATH=/home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/rtabmap_python/prefix_override:/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/rtabmap_python/lib/python3.11/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/rtabmap_python/build --no-deps install_data

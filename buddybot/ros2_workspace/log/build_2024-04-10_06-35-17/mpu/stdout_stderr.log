@@ -1,0 +1,61 @@
+-- The C compiler identification is GNU 12.2.0
+-- The CXX compiler identification is GNU 12.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.0.4 (/home/taylor/ros2_iron/install/ament_cmake/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.11.2") found components: Interpreter 
+-- Found rclpy: 4.1.4 (/home/taylor/ros2_iron/install/rclpy/share/rclpy/cmake)
+-- Found std_msgs: 5.0.0 (/home/taylor/ros2_iron/install/std_msgs/share/std_msgs/cmake)
+-- Found rosidl_generator_c: 4.0.1 (/home/taylor/ros2_iron/install/rosidl_generator_c/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.0.1 (/home/taylor/ros2_iron/install/rosidl_generator_cpp/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_introspection_c;rosidl_typesupport_fastrtps_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_introspection_cpp;rosidl_typesupport_fastrtps_cpp
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/mpu
+[33mCMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CATKIN_INSTALL_INTO_PREFIX_ROOT
+
+[0m
+Built target ament_cmake_python_copy_mpu
+running egg_info
+creating mpu.egg-info
+writing mpu.egg-info/PKG-INFO
+writing dependency_links to mpu.egg-info/dependency_links.txt
+writing top-level names to mpu.egg-info/top_level.txt
+writing manifest file 'mpu.egg-info/SOURCES.txt'
+reading manifest file 'mpu.egg-info/SOURCES.txt'
+writing manifest file 'mpu.egg-info/SOURCES.txt'
+Built target ament_cmake_python_build_mpu_egg
+-- Install configuration: ""
+-- Installing: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/mpu/share/mpu/environment/pythonpath.sh
+-- Installing: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/mpu/share/mpu/environment/pythonpath.dsv
+-- Installing: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/mpu/lib/python3.11/site-packages/mpu-0.0.1-py3.11.egg-info
+-- Installing: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/mpu/lib/python3.11/site-packages/mpu-0.0.1-py3.11.egg-info/PKG-INFO
+-- Installing: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/mpu/lib/python3.11/site-packages/mpu-0.0.1-py3.11.egg-info/top_level.txt
+-- Installing: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/mpu/lib/python3.11/site-packages/mpu-0.0.1-py3.11.egg-info/dependency_links.txt
+-- Installing: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/mpu/lib/python3.11/site-packages/mpu-0.0.1-py3.11.egg-info/SOURCES.txt
+-- Installing: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/mpu/lib/python3.11/site-packages/mpu
+-- Installing: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/mpu/lib/python3.11/site-packages/mpu/mpupublisher.py
+-- Installing: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/mpu/lib/python3.11/site-packages/mpu/mpusubscriber.py
+-- Installing: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/mpu/lib/python3.11/site-packages/mpu/__init__.py
+Listing '/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/mpu/lib/python3.11/site-packages/mpu'...
+Compiling '/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/mpu/lib/python3.11/site-packages/mpu/__init__.py'...
+Compiling '/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/mpu/lib/python3.11/site-packages/mpu/mpupublisher.py'...
+Compiling '/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/mpu/lib/python3.11/site-packages/mpu/mpusubscriber.py'...
+[31mCMake Error at cmake_install.cmake:70 (file):
+  file INSTALL cannot find
+  "/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/mpu/src/mpu/mpupublisher.py":
+  No such file or directory.
+
+[0m

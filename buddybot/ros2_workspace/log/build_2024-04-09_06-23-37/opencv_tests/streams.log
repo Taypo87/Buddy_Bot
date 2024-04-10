@@ -1,0 +1,23 @@
+[5.064s] Invoking command in '/home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/opencv_tests': AMENT_PREFIX_PATH=/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/cv_bridge:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/cv_bridge/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/opencv_tests/prefix_override:/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/opencv_tests/lib/python3.11/site-packages:/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/cv_bridge/lib/python3.11/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/opencv_tests/build --no-deps install_data
+[8.700s] running develop
+[8.701s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:146: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[8.701s]   warnings.warn(
+[8.841s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[8.841s]   warnings.warn(
+[9.665s] running egg_info
+[9.736s] writing opencv_tests.egg-info/PKG-INFO
+[9.737s] writing dependency_links to opencv_tests.egg-info/dependency_links.txt
+[9.739s] writing entry points to opencv_tests.egg-info/entry_points.txt
+[9.740s] writing requirements to opencv_tests.egg-info/requires.txt
+[9.742s] writing top-level names to opencv_tests.egg-info/top_level.txt
+[9.961s] reading manifest file 'opencv_tests.egg-info/SOURCES.txt'
+[9.964s] writing manifest file 'opencv_tests.egg-info/SOURCES.txt'
+[10.107s] running build_ext
+[10.108s] Creating /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/opencv_tests/lib/python3.11/site-packages/opencv-tests.egg-link (link to .)
+[10.111s] Installing broadcast script to /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/opencv_tests/lib/opencv_tests
+[10.113s] Installing rosfacedetect script to /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/opencv_tests/lib/opencv_tests
+[10.114s] Installing source script to /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/opencv_tests/lib/opencv_tests
+[10.120s] 
+[10.120s] Installed /home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/opencv_tests
+[10.120s] running install_data
+[10.408s] Invoked command in '/home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/opencv_tests' returned '0': AMENT_PREFIX_PATH=/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/cv_bridge:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/cv_bridge/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/opencv_tests/prefix_override:/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/opencv_tests/lib/python3.11/site-packages:/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/cv_bridge/lib/python3.11/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/opencv_tests/build --no-deps install_data

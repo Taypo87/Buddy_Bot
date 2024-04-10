@@ -1,0 +1,64 @@
+[0.099s] Invoking command in '/home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/move_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/tfmini_s:/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/rtabmap_python:/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/opencv_tests:/home/taylor/ros2_iron/install/rqt_bag_plugins:/home/taylor/ros2_iron/install/rqt_bag:/home/taylor/ros2_iron/install/rosbag2_examples_py:/home/taylor/ros2_iron/install/launch_testing_examples:/home/taylor/ros2_iron/install/ros2bag:/home/taylor/ros2_iron/install/tracetools_test:/home/taylor/ros2_iron/install/tracetools_launch:/home/taylor/ros2_iron/install/topic_monitor:/home/taylor/ros2_iron/install/tf2_tools:/home/taylor/ros2_iron/install/examples_tf2_py:/home/taylor/ros2_iron/install/tf2_ros_py:/home/taylor/ros2_iron/install/examples_rclpy_pointcloud_publisher:/home/taylor/ros2_iron/install/sensor_msgs_py:/home/taylor/ros2_iron/install/quality_of_service_demo_py:/home/taylor/ros2_iron/install/rqt_plot:/home/taylor/ros2_iron/install/ros2doctor:/home/taylor/ros2_iron/install/lifecycle_py:/home/taylor/ros2_iron/install/examples_rclpy_minimal_subscriber:/home/taylor/ros2_iron/install/examples_rclpy_minimal_service:/home/taylor/ros2_iron/install/examples_rclpy_minimal_publisher:/home/taylor/ros2_iron/install/examples_rclpy_minimal_client:/home/taylor/ros2_iron/install/examples_rclpy_executors:/home/taylor/ros2_iron/install/demo_nodes_py:/home/taylor/ros2_iron/install/rqt:/home/taylor/ros2_iron/install/ros2component:/home/taylor/ros2_iron/install/sros2:/home/taylor/ros2_iron/install/rqt_topic:/home/taylor/ros2_iron/install/rqt_srv:/home/taylor/ros2_iron/install/rqt_shell:/home/taylor/ros2_iron/install/rqt_service_caller:/home/taylor/ros2_iron/install/rqt_reconfigure:/home/taylor/ros2_iron/install/rqt_py_console:/home/taylor/ros2_iron/install/rqt_publisher:/home/taylor/ros2_iron/install/rqt_action:/home/taylor/ros2_iron/install/rqt_msg:/home/taylor/ros2_iron/install/rqt_console:/home/taylor/ros2_iron/install/rqt_graph:/home/taylor/ros2_iron/install/rqt_gui_py:/home/taylor/ros2_iron/install/rqt_gui:/home/taylor/ros2_iron/install/ros2trace:/home/taylor/ros2_iron/install/ros2topic:/home/taylor/ros2_iron/install/ros2test:/home/taylor/ros2_iron/install/ros2param:/home/taylor/ros2_iron/install/ros2lifecycle:/home/taylor/ros2_iron/install/ros2service:/home/taylor/ros2_iron/install/ros2run:/home/taylor/ros2_iron/install/ros2launch:/home/taylor/ros2_iron/install/ros2pkg:/home/taylor/ros2_iron/install/ros2node:/home/taylor/ros2_iron/install/ros2multicast:/home/taylor/ros2_iron/install/ros2interface:/home/taylor/ros2_iron/install/ros2action:/home/taylor/ros2_iron/install/ros2cli:/home/taylor/ros2_iron/install/launch_testing_ros:/home/taylor/ros2_iron/install/launch_ros:/home/taylor/ros2_iron/install/examples_rclpy_minimal_action_server:/home/taylor/ros2_iron/install/examples_rclpy_minimal_action_client:/home/taylor/ros2_iron/install/examples_rclpy_guard_conditions:/home/taylor/ros2_iron/install/action_tutorials_py:/home/taylor/ros2_iron/install/ament_uncrustify:/home/taylor/ros2_iron/install/tracetools_trace:/home/taylor/ros2_iron/install/tracetools_read:/home/taylor/ros2_iron/install/test_tracetools_launch:/home/taylor/ros2_iron/install/test_ros2trace:/home/taylor/ros2_iron/install/test_launch_ros:/home/taylor/ros2_iron/install/rpyutils:/home/taylor/ros2_iron/install/rosidl_runtime_py:/home/taylor/ros2_iron/install/rosidl_pycommon:/home/taylor/ros2_iron/install/rosidl_cli:/home/taylor/ros2_iron/install/launch_pytest:/home/taylor/ros2_iron/install/launch_testing:/home/taylor/ros2_iron/install/launch_yaml:/home/taylor/ros2_iron/install/launch_xml:/home/taylor/ros2_iron/install/launch:/home/taylor/ros2_iron/install/osrf_pycommon:/home/taylor/ros2_iron/install/domain_coordinator:/home/taylor/ros2_iron/install/ament_xmllint:/home/taylor/ros2_iron/install/ament_pyflakes:/home/taylor/ros2_iron/install/ament_pycodestyle:/home/taylor/ros2_iron/install/ament_pep257:/home/taylor/ros2_iron/install/ament_pclint:/home/taylor/ros2_iron/install/ament_package:/home/taylor/ros2_iron/install/ament_mypy:/home/taylor/ros2_iron/install/ament_lint_cmake:/home/taylor/ros2_iron/install/ament_flake8:/home/taylor/ros2_iron/install/ament_copyright:/home/taylor/ros2_iron/install/ament_lint:/home/taylor/ros2_iron/install/ament_index_python:/home/taylor/ros2_iron/install/ament_cpplint:/home/taylor/ros2_iron/install/ament_cppcheck:/home/taylor/ros2_iron/install/ament_clang_tidy:/home/taylor/ros2_iron/install/ament_clang_format /usr/bin/cmake --build /home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/move_bot -- -j4 -l4
+[0.269s] [  2%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[0.298s] [  2%] Built target ament_cmake_python_copy_move_bot
+[0.888s] [  2%] Built target move_bot__rosidl_generator_type_description
+[0.939s] [  5%] [34m[1mGenerating C code for ROS interfaces[0m
+[0.964s] [  8%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.425s] running egg_info
+[1.426s] creating move_bot.egg-info
+[1.473s] writing move_bot.egg-info/PKG-INFO
+[1.474s] writing dependency_links to move_bot.egg-info/dependency_links.txt
+[1.475s] writing top-level names to move_bot.egg-info/top_level.txt
+[1.475s] writing manifest file 'move_bot.egg-info/SOURCES.txt'
+[1.677s] reading manifest file 'move_bot.egg-info/SOURCES.txt'
+[1.678s] writing manifest file 'move_bot.egg-info/SOURCES.txt'
+[1.893s] [  8%] Built target ament_cmake_python_build_move_bot_egg
+[1.946s] [  8%] Built target move_bot__cpp
+[1.971s] [ 10%] [32mBuilding C object CMakeFiles/move_bot__rosidl_generator_c.dir/rosidl_generator_c/move_bot/msg/detail/movement__type_support.c.o[0m
+[1.972s] [ 13%] [32mBuilding C object CMakeFiles/move_bot__rosidl_generator_c.dir/rosidl_generator_c/move_bot/msg/detail/movement__description.c.o[0m
+[1.980s] [ 16%] [32mBuilding C object CMakeFiles/move_bot__rosidl_generator_c.dir/rosidl_generator_c/move_bot/msg/detail/movement__functions.c.o[0m
+[2.109s] [ 18%] [32m[1mLinking C shared library libmove_bot__rosidl_generator_c.so[0m
+[2.207s] [ 18%] Built target move_bot__rosidl_generator_c
+[2.258s] [ 24%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[2.260s] [ 24%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[2.269s] [ 27%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[2.286s] [ 29%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[3.031s] [ 32%] [32mBuilding CXX object CMakeFiles/move_bot__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/move_bot/msg/detail/movement__type_support_c.cpp.o[0m
+[3.218s] [ 35%] [32mBuilding CXX object CMakeFiles/move_bot__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/move_bot/msg/movement__type_support.cpp.o[0m
+[3.314s] [ 37%] [32mBuilding C object CMakeFiles/move_bot__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/move_bot/msg/detail/movement__type_support.c.o[0m
+[3.342s] [ 40%] [32mBuilding CXX object CMakeFiles/move_bot__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/move_bot/msg/detail/dds_fastrtps/movement__type_support.cpp.o[0m
+[3.499s] [ 43%] [32m[1mLinking C shared library libmove_bot__rosidl_typesupport_introspection_c.so[0m
+[3.699s] [ 43%] Built target move_bot__rosidl_typesupport_introspection_c
+[3.773s] [ 45%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[4.417s] [ 48%] [32m[1mLinking CXX shared library libmove_bot__rosidl_typesupport_cpp.so[0m
+[4.436s] [ 51%] [32m[1mLinking CXX shared library libmove_bot__rosidl_typesupport_fastrtps_c.so[0m
+[4.583s] [ 51%] Built target move_bot__rosidl_typesupport_cpp
+[4.627s] [ 54%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[4.689s] [ 54%] Built target move_bot__rosidl_typesupport_fastrtps_c
+[4.848s] [ 56%] [32mBuilding CXX object CMakeFiles/move_bot__rosidl_typesupport_c.dir/rosidl_typesupport_c/move_bot/msg/movement__type_support.cpp.o[0m
+[4.871s] [ 59%] [32m[1mLinking CXX shared library libmove_bot__rosidl_typesupport_fastrtps_cpp.so[0m
+[4.951s] [ 62%] [32m[1mLinking CXX shared library libmove_bot__rosidl_typesupport_c.so[0m
+[5.068s] [ 62%] Built target move_bot__rosidl_typesupport_c
+[5.074s] [ 62%] Built target move_bot__rosidl_typesupport_fastrtps_cpp
+[5.264s] [ 64%] [32mBuilding CXX object CMakeFiles/move_bot__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/move_bot/msg/detail/movement__type_support.cpp.o[0m
+[5.724s] [ 67%] [32m[1mLinking CXX shared library libmove_bot__rosidl_typesupport_introspection_cpp.so[0m
+[5.857s] [ 67%] Built target move_bot__rosidl_typesupport_introspection_cpp
+[5.913s] [ 67%] Built target move_bot
+[5.976s] [ 72%] [34m[1mGenerating Python code for ROS interfaces[0m
+[5.978s] [ 72%] [32mBuilding C object CMakeFiles/move_node.dir/src/movements.c.o[0m
+[5.978s] [ 75%] [32mBuilding CXX object CMakeFiles/move_node.dir/src/move_bot.cpp.o[0m
+[6.599s] [ 75%] Built target move_bot__py
+[6.660s] [ 78%] [32mBuilding C object CMakeFiles/move_bot__rosidl_generator_py.dir/rosidl_generator_py/move_bot/msg/_movement_s.c.o[0m
+[6.848s] [ 81%] [32m[1mLinking C shared library rosidl_generator_py/move_bot/libmove_bot__rosidl_generator_py.so[0m
+[6.946s] [ 81%] Built target move_bot__rosidl_generator_py
+[7.020s] [ 83%] [32mBuilding C object CMakeFiles/move_bot__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/move_bot/_move_bot_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[7.028s] [ 86%] [32mBuilding C object CMakeFiles/move_bot__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/move_bot/_move_bot_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[7.052s] [ 89%] [32mBuilding C object CMakeFiles/move_bot__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/move_bot/_move_bot_s.ep.rosidl_typesupport_c.c.o[0m
+[7.230s] [ 91%] [32m[1mLinking C shared library rosidl_generator_py/move_bot/move_bot_s__rosidl_typesupport_introspection_c.cpython-311-aarch64-linux-gnu.so[0m
+[7.240s] [ 94%] [32m[1mLinking C shared library rosidl_generator_py/move_bot/move_bot_s__rosidl_typesupport_fastrtps_c.cpython-311-aarch64-linux-gnu.so[0m
+[7.251s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/move_bot/move_bot_s__rosidl_typesupport_c.cpython-311-aarch64-linux-gnu.so[0m
+[7.335s] [ 97%] Built target move_bot__rosidl_typesupport_introspection_c__pyext
+[7.345s] [ 97%] Built target move_bot__rosidl_typesupport_fastrtps_c__pyext
+[7.358s] [ 97%] Built target move_bot__rosidl_typesupport_c__pyext
+[16.811s] [100%] [32m[1mLinking CXX executable move_node[0m
+[19.003s] [100%] Built target move_node

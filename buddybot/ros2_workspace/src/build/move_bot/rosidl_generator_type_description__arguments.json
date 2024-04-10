@@ -1,7 +1,0 @@
-{
-  "package_name": "move_bot",
-  "output_dir": "/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/build/move_bot/rosidl_generator_type_description/move_bot",
-  "idl_tuples": [
-    "/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/build/move_bot/rosidl_adapter/move_bot:msg/Movement.idl"
-  ]
-}

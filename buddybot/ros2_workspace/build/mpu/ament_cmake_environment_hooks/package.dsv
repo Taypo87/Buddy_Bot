@@ -1,0 +1,4 @@
+source;share/mpu/local_setup.bash
+source;share/mpu/local_setup.dsv
+source;share/mpu/local_setup.sh
+source;share/mpu/local_setup.zsh

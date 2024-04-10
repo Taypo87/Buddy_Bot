@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/move_bot/rosidl_generator_py/move_bot/move_bot_s__rosidl_typesupport_fastrtps_c.cpython-311-aarch64-linux-gnu.so" "TARGETS" "move_bot__rosidl_typesupport_fastrtps_c__pyext" "DESTINATION" "lib/python3.11/site-packages/move_bot")

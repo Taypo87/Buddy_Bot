@@ -328,17 +328,17 @@ move_bot__rosidl_typesupport_cpp/fast:
 .PHONY : move_bot__rosidl_typesupport_cpp/fast
 
 #=============================================================================
-# Target rules for targets named ament_cmake_python_symlink_move_bot
+# Target rules for targets named ament_cmake_python_copy_move_bot
 
 # Build rule for target.
-ament_cmake_python_symlink_move_bot: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_symlink_move_bot
-.PHONY : ament_cmake_python_symlink_move_bot
+ament_cmake_python_copy_move_bot: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_copy_move_bot
+.PHONY : ament_cmake_python_copy_move_bot
 
 # fast build rule for target.
-ament_cmake_python_symlink_move_bot/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_symlink_move_bot.dir/build.make CMakeFiles/ament_cmake_python_symlink_move_bot.dir/build
-.PHONY : ament_cmake_python_symlink_move_bot/fast
+ament_cmake_python_copy_move_bot/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_copy_move_bot.dir/build.make CMakeFiles/ament_cmake_python_copy_move_bot.dir/build
+.PHONY : ament_cmake_python_copy_move_bot/fast
 
 #=============================================================================
 # Target rules for targets named ament_cmake_python_build_move_bot_egg
@@ -805,7 +805,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... ament_cmake_python_build_move_bot_egg"
-	@echo "... ament_cmake_python_symlink_move_bot"
+	@echo "... ament_cmake_python_copy_move_bot"
 	@echo "... move_bot"
 	@echo "... move_bot__cpp"
 	@echo "... move_bot__py"

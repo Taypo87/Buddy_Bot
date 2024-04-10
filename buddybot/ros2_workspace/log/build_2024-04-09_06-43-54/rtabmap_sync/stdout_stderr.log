@@ -1,0 +1,29 @@
+[  4%] [32mBuilding CXX object CMakeFiles/rtabmap_sync_plugins.dir/src/nodelets/stereo_sync.cpp.o[0m
+[  8%] [32mBuilding CXX object CMakeFiles/rtabmap_sync_plugins.dir/src/nodelets/rgbdx_sync.cpp.o[0m
+[ 13%] [32mBuilding CXX object CMakeFiles/rtabmap_sync_plugins.dir/src/nodelets/rgbd_sync.cpp.o[0m
+[ 17%] [32mBuilding CXX object CMakeFiles/rtabmap_sync.dir/src/impl/CommonDataSubscriberDepth.cpp.o[0m
+In file included from [01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/rtabmap_ros/rtabmap_sync/include/rtabmap_sync/CommonDataSubscriber.h:40[m[K,
+                 from [01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/rtabmap_ros/rtabmap_sync/include/rtabmap_sync/rgbdx_sync.hpp:43[m[K,
+                 from [01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/rtabmap_ros/rtabmap_sync/src/nodelets/rgbdx_sync.cpp:28[m[K:
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/cv_bridge/include/cv_bridge/cv_bridge/cv_bridge.h:42:2:[m[K [01;35m[Kwarning: [m[K#warning This header is obsolete, please include cv_bridge/cv_bridge.hpp instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+   42 | #[01;35m[Kwarning[m[K This header is obsolete, please include cv_bridge/cv_bridge.hpp instead
+      |  [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/rtabmap_ros/rtabmap_sync/include/rtabmap_sync/CommonDataSubscriber.h:40[m[K,
+                 from [01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/rtabmap_ros/rtabmap_sync/src/impl/CommonDataSubscriberDepth.cpp:28[m[K:
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/cv_bridge/include/cv_bridge/cv_bridge/cv_bridge.h:42:2:[m[K [01;35m[Kwarning: [m[K#warning This header is obsolete, please include cv_bridge/cv_bridge.hpp instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+   42 | #[01;35m[Kwarning[m[K This header is obsolete, please include cv_bridge/cv_bridge.hpp instead
+      |  [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/rtabmap_conversions/include/rtabmap_conversions/MsgConversion.h:43[m[K,
+                 from [01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/rtabmap_ros/rtabmap_sync/include/rtabmap_sync/SyncDiagnostic.h:9[m[K,
+                 from [01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/rtabmap_ros/rtabmap_sync/include/rtabmap_sync/rgbd_sync.hpp:42[m[K,
+                 from [01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/rtabmap_ros/rtabmap_sync/src/nodelets/rgbd_sync.cpp:28[m[K:
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/cv_bridge/include/cv_bridge/cv_bridge/cv_bridge.h:42:2:[m[K [01;35m[Kwarning: [m[K#warning This header is obsolete, please include cv_bridge/cv_bridge.hpp instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+   42 | #[01;35m[Kwarning[m[K This header is obsolete, please include cv_bridge/cv_bridge.hpp instead
+      |  [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/rtabmap_conversions/include/rtabmap_conversions/MsgConversion.h:43[m[K,
+                 from [01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/rtabmap_ros/rtabmap_sync/include/rtabmap_sync/SyncDiagnostic.h:9[m[K,
+                 from [01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/rtabmap_ros/rtabmap_sync/include/rtabmap_sync/stereo_sync.hpp:42[m[K,
+                 from [01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/rtabmap_ros/rtabmap_sync/src/nodelets/stereo_sync.cpp:28[m[K:
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/cv_bridge/include/cv_bridge/cv_bridge/cv_bridge.h:42:2:[m[K [01;35m[Kwarning: [m[K#warning This header is obsolete, please include cv_bridge/cv_bridge.hpp instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+   42 | #[01;35m[Kwarning[m[K This header is obsolete, please include cv_bridge/cv_bridge.hpp instead
+      |  [01;35m[K^~~~~~~[m[K

@@ -1,0 +1,63 @@
+In file included from [01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/rtabmap_conversions/include/rtabmap_conversions/MsgConversion.h:43[m[K,
+                 from [01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/rtabmap_sync/include/rtabmap_sync/SyncDiagnostic.h:9[m[K,
+                 from [01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/rtabmap_ros/rtabmap_odom/include/rtabmap_odom/OdometryROS.h:54[m[K,
+                 from [01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/rtabmap_ros/rtabmap_odom/src/OdometryROS.cpp:28[m[K:
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/cv_bridge/include/cv_bridge/cv_bridge/cv_bridge.h:42:2:[m[K [01;35m[Kwarning: [m[K#warning This header is obsolete, please include cv_bridge/cv_bridge.hpp instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+   42 | #[01;35m[Kwarning[m[K This header is obsolete, please include cv_bridge/cv_bridge.hpp instead
+      |  [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/rtabmap_conversions/include/rtabmap_conversions/MsgConversion.h:43[m[K,
+                 from [01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/rtabmap_sync/include/rtabmap_sync/SyncDiagnostic.h:9[m[K,
+                 from [01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/rtabmap_ros/rtabmap_odom/include/rtabmap_odom/OdometryROS.h:54[m[K,
+                 from [01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/rtabmap_ros/rtabmap_odom/include/rtabmap_odom/rgbd_odometry.hpp:30[m[K,
+                 from [01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/rtabmap_ros/rtabmap_odom/src/nodelets/rgbd_odometry.cpp:28[m[K:
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/cv_bridge/include/cv_bridge/cv_bridge/cv_bridge.h:42:2:[m[K [01;35m[Kwarning: [m[K#warning This header is obsolete, please include cv_bridge/cv_bridge.hpp instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+   42 | #[01;35m[Kwarning[m[K This header is obsolete, please include cv_bridge/cv_bridge.hpp instead
+      |  [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/rtabmap_conversions/include/rtabmap_conversions/MsgConversion.h:43[m[K,
+                 from [01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/rtabmap_sync/include/rtabmap_sync/SyncDiagnostic.h:9[m[K,
+                 from [01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/rtabmap_ros/rtabmap_odom/include/rtabmap_odom/OdometryROS.h:54[m[K,
+                 from [01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/rtabmap_ros/rtabmap_odom/include/rtabmap_odom/icp_odometry.hpp:30[m[K,
+                 from [01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/rtabmap_ros/rtabmap_odom/src/nodelets/icp_odometry.cpp:28[m[K:
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/cv_bridge/include/cv_bridge/cv_bridge/cv_bridge.h:42:2:[m[K [01;35m[Kwarning: [m[K#warning This header is obsolete, please include cv_bridge/cv_bridge.hpp instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+   42 | #[01;35m[Kwarning[m[K This header is obsolete, please include cv_bridge/cv_bridge.hpp instead
+      |  [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/rtabmap_conversions/include/rtabmap_conversions/MsgConversion.h:43[m[K,
+                 from [01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/rtabmap_sync/include/rtabmap_sync/SyncDiagnostic.h:9[m[K,
+                 from [01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/rtabmap_ros/rtabmap_odom/include/rtabmap_odom/OdometryROS.h:54[m[K,
+                 from [01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/rtabmap_ros/rtabmap_odom/include/rtabmap_odom/stereo_odometry.hpp:30[m[K,
+                 from [01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/rtabmap_ros/rtabmap_odom/src/nodelets/stereo_odometry.cpp:28[m[K:
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/cv_bridge/include/cv_bridge/cv_bridge/cv_bridge.h:42:2:[m[K [01;35m[Kwarning: [m[K#warning This header is obsolete, please include cv_bridge/cv_bridge.hpp instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+   42 | #[01;35m[Kwarning[m[K This header is obsolete, please include cv_bridge/cv_bridge.hpp instead
+      |  [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/rtabmap_ros/rtabmap_odom/src/nodelets/rgbd_odometry.cpp:30[m[K:
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/vision_opencv/image_geometry/include/image_geometry/stereo_camera_model.h:6:2:[m[K [01;35m[Kwarning: [m[K#warning This header is obsolete, please include image_geometry/stereo_camera_model.hpp instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+    6 | #[01;35m[Kwarning[m[K This header is obsolete, please include image_geometry/stereo_camera_model.hpp instead
+      |  [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/rtabmap_ros/rtabmap_odom/src/nodelets/stereo_odometry.cpp:32[m[K:
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/vision_opencv/image_geometry/include/image_geometry/stereo_camera_model.h:6:2:[m[K [01;35m[Kwarning: [m[K#warning This header is obsolete, please include image_geometry/stereo_camera_model.hpp instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+    6 | #[01;35m[Kwarning[m[K This header is obsolete, please include image_geometry/stereo_camera_model.hpp instead
+      |  [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/rtabmap_conversions/include/rtabmap_conversions/MsgConversion.h:43[m[K,
+                 from [01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/rtabmap_sync/include/rtabmap_sync/SyncDiagnostic.h:9[m[K,
+                 from [01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/rtabmap_ros/rtabmap_odom/include/rtabmap_odom/OdometryROS.h:54[m[K,
+                 from [01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/rtabmap_ros/rtabmap_odom/include/rtabmap_odom/rgbd_odometry.hpp:30[m[K,
+                 from [01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/rtabmap_ros/rtabmap_odom/src/RGBDOdometryNode.cpp:28[m[K:
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/cv_bridge/include/cv_bridge/cv_bridge/cv_bridge.h:42:2:[m[K [01;35m[Kwarning: [m[K#warning This header is obsolete, please include cv_bridge/cv_bridge.hpp instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+   42 | #[01;35m[Kwarning[m[K This header is obsolete, please include cv_bridge/cv_bridge.hpp instead
+      |  [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/rtabmap_conversions/include/rtabmap_conversions/MsgConversion.h:43[m[K,
+                 from [01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/rtabmap_sync/include/rtabmap_sync/SyncDiagnostic.h:9[m[K,
+                 from [01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/rtabmap_ros/rtabmap_odom/include/rtabmap_odom/OdometryROS.h:54[m[K,
+                 from [01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/rtabmap_ros/rtabmap_odom/include/rtabmap_odom/icp_odometry.hpp:30[m[K,
+                 from [01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/rtabmap_ros/rtabmap_odom/src/ICPOdometryNode.cpp:28[m[K:
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/cv_bridge/include/cv_bridge/cv_bridge/cv_bridge.h:42:2:[m[K [01;35m[Kwarning: [m[K#warning This header is obsolete, please include cv_bridge/cv_bridge.hpp instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+   42 | #[01;35m[Kwarning[m[K This header is obsolete, please include cv_bridge/cv_bridge.hpp instead
+      |  [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/rtabmap_conversions/include/rtabmap_conversions/MsgConversion.h:43[m[K,
+                 from [01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/rtabmap_sync/include/rtabmap_sync/SyncDiagnostic.h:9[m[K,
+                 from [01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/rtabmap_ros/rtabmap_odom/include/rtabmap_odom/OdometryROS.h:54[m[K,
+                 from [01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/rtabmap_ros/rtabmap_odom/include/rtabmap_odom/stereo_odometry.hpp:30[m[K,
+                 from [01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/rtabmap_ros/rtabmap_odom/src/StereoOdometryNode.cpp:28[m[K:
+[01m[K/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/cv_bridge/include/cv_bridge/cv_bridge/cv_bridge.h:42:2:[m[K [01;35m[Kwarning: [m[K#warning This header is obsolete, please include cv_bridge/cv_bridge.hpp instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+   42 | #[01;35m[Kwarning[m[K This header is obsolete, please include cv_bridge/cv_bridge.hpp instead
+      |  [01;35m[K^~~~~~~[m[K

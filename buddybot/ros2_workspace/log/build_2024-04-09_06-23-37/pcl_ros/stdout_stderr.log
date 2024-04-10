@@ -1,0 +1,106 @@
+[  5%] Built target filter_project_inliers_node
+[ 11%] Built target filter_extract_indices_node
+[ 17%] Built target filter_passthrough_node
+[ 22%] Built target pcl_ros_tf
+[ 28%] Built target filter_statistical_outlier_removal_node
+[ 34%] Built target filter_radius_outlier_removal_node
+[ 40%] Built target filter_crop_box_node
+[ 45%] Built target filter_voxel_grid_node
+[ 51%] Built target pcd_to_pointcloud
+[ 57%] Built target pcd_to_pointcloud_lib
+[ 62%] Built target pointcloud_to_pcd_lib
+[ 68%] Built target pointcloud_to_pcd
+[ 74%] Built target dummy_topics
+[100%] Built target pcl_ros_filters
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/lib/pcl_ros/filter_extract_indices_node
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/lib/pcl_ros/filter_passthrough_node
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/lib/pcl_ros/filter_project_inliers_node
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/lib/pcl_ros/filter_radius_outlier_removal_node
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/lib/pcl_ros/filter_statistical_outlier_removal_node
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/lib/pcl_ros/filter_crop_box_node
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/lib/pcl_ros/filter_voxel_grid_node
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/lib/pcl_ros/pcd_to_pointcloud
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/lib/pcl_ros/pointcloud_to_pcd
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/include/pcl_ros/pcl_ros/features/boundary.hpp
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/include/pcl_ros/pcl_ros/features/feature.hpp
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/include/pcl_ros/pcl_ros/features/fpfh.hpp
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/include/pcl_ros/pcl_ros/features/fpfh_omp.hpp
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/include/pcl_ros/pcl_ros/features/moment_invariants.hpp
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/include/pcl_ros/pcl_ros/features/normal_3d.hpp
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/include/pcl_ros/pcl_ros/features/normal_3d_omp.hpp
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/include/pcl_ros/pcl_ros/features/normal_3d_tbb.hpp
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/include/pcl_ros/pcl_ros/features/pfh.hpp
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/include/pcl_ros/pcl_ros/features/principal_curvatures.hpp
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/include/pcl_ros/pcl_ros/features/shot.hpp
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/include/pcl_ros/pcl_ros/features/shot_omp.hpp
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/include/pcl_ros/pcl_ros/features/vfh.hpp
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/include/pcl_ros/pcl_ros/filters/crop_box.hpp
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/include/pcl_ros/pcl_ros/filters/extract_indices.hpp
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/include/pcl_ros/pcl_ros/filters/filter.hpp
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/include/pcl_ros/pcl_ros/filters/passthrough.hpp
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/include/pcl_ros/pcl_ros/filters/project_inliers.hpp
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/include/pcl_ros/pcl_ros/filters/radius_outlier_removal.hpp
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/include/pcl_ros/pcl_ros/filters/statistical_outlier_removal.hpp
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/include/pcl_ros/pcl_ros/filters/voxel_grid.hpp
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/include/pcl_ros/pcl_ros/impl/transforms.hpp
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/include/pcl_ros/pcl_ros/io/bag_io.hpp
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/include/pcl_ros/pcl_ros/io/concatenate_data.hpp
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/include/pcl_ros/pcl_ros/io/concatenate_fields.hpp
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/include/pcl_ros/pcl_ros/io/pcd_io.hpp
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/include/pcl_ros/pcl_ros/pcl_node.hpp
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/include/pcl_ros/pcl_ros/point_cloud.hpp
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/include/pcl_ros/pcl_ros/publisher.hpp
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/include/pcl_ros/pcl_ros/segmentation/extract_clusters.hpp
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/include/pcl_ros/pcl_ros/segmentation/extract_polygonal_prism_data.hpp
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/include/pcl_ros/pcl_ros/segmentation/sac_segmentation.hpp
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/include/pcl_ros/pcl_ros/segmentation/segment_differences.hpp
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/include/pcl_ros/pcl_ros/surface/convex_hull.hpp
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/include/pcl_ros/pcl_ros/surface/moving_least_squares.hpp
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/include/pcl_ros/pcl_ros/transforms.hpp
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/share/pcl_ros/plugins/nodelet/libpcl_ros_features.xml
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/share/pcl_ros/plugins/nodelet/libpcl_ros_filters.xml
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/share/pcl_ros/plugins/nodelet/libpcl_ros_io.xml
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/share/pcl_ros/plugins/nodelet/libpcl_ros_segmentation.xml
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/share/pcl_ros/plugins/nodelet/libpcl_ros_surface.xml
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/share/pcl_ros/samples/data/.gitignore
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/share/pcl_ros/samples/pcl_ros/features/sample_normal_3d.launch
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/share/pcl_ros/samples/pcl_ros/filters/config/statistical_outlier_removal.rviz
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/share/pcl_ros/samples/pcl_ros/filters/config/voxel_grid.rviz
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/share/pcl_ros/samples/pcl_ros/filters/sample_statistical_outlier_removal.launch
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/share/pcl_ros/samples/pcl_ros/filters/sample_voxel_grid.launch
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/share/pcl_ros/samples/pcl_ros/io/sample_concatenate_data.launch
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/share/pcl_ros/samples/pcl_ros/segmentation/sample_extract_clusters.launch
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/share/pcl_ros/samples/pcl_ros/surface/sample_convex_hull.launch
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/share/pcl_ros/environment/library_path.sh
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/share/pcl_ros/environment/library_path.dsv
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/share/ament_index/resource_index/package_run_dependencies/pcl_ros
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/share/ament_index/resource_index/parent_prefix_path/pcl_ros
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/share/pcl_ros/environment/ament_prefix_path.sh
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/share/pcl_ros/environment/ament_prefix_path.dsv
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/share/pcl_ros/environment/path.sh
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/share/pcl_ros/environment/path.dsv
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/share/pcl_ros/local_setup.bash
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/share/pcl_ros/local_setup.sh
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/share/pcl_ros/local_setup.zsh
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/share/pcl_ros/local_setup.dsv
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/share/pcl_ros/package.dsv
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/share/ament_index/resource_index/packages/pcl_ros
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/share/ament_index/resource_index/rclcpp_components/pcl_ros
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/share/pcl_ros/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/share/pcl_ros/cmake/ament_cmake_export_libraries-extras.cmake
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/share/pcl_ros/cmake/ament_cmake_export_targets-extras.cmake
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/share/pcl_ros/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/share/pcl_ros/cmake/pcl_rosConfig.cmake
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/share/pcl_ros/cmake/pcl_rosConfig-version.cmake
+-- Symlinking: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/share/pcl_ros/package.xml
+-- Installing: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/lib/libpcl_ros_tf.a
+-- Installing: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/lib/libpcd_to_pointcloud_lib.so
+-- Set runtime path of "/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/lib/libpcd_to_pointcloud_lib.so" to ""
+-- Installing: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/lib/libpcl_ros_filters.so
+-- Set runtime path of "/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/lib/libpcl_ros_filters.so" to ""
+-- Installing: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/lib/libpointcloud_to_pcd_lib.so
+-- Set runtime path of "/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/lib/libpointcloud_to_pcd_lib.so" to ""
+-- Installing: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/share/pcl_ros/cmake/export_pcl_rosExport.cmake
+-- Installing: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/pcl_ros/share/pcl_ros/cmake/export_pcl_rosExport-noconfig.cmake
