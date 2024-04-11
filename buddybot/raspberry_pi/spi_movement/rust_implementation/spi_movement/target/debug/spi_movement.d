@@ -1,0 +1,1 @@
+/home/taylor/Buddy_Bot/buddybot/raspberry_pi/spi_movement/rust_implementation/spi_movement/target/debug/spi_movement: /home/taylor/Buddy_Bot/buddybot/raspberry_pi/spi_movement/rust_implementation/spi_movement/src/main.rs /home/taylor/Buddy_Bot/buddybot/raspberry_pi/spi_movement/rust_implementation/spi_movement/src/spi_controller.rs

@@ -1,0 +1,6 @@
+{
+  "package_name": "movement",
+  "non_idl_tuples": [
+    "/home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/movement:msg/Movement.msg"
+  ]
+}

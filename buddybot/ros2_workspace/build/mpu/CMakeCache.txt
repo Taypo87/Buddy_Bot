@@ -40,6 +40,9 @@ BUILD_TESTING:BOOL=ON
 //No help, variable specified on the command line.
 CATKIN_INSTALL_INTO_PREFIX_ROOT:UNINITIALIZED=0
 
+//No help, variable specified on the command line.
+CATKIN_SYMLINK_INSTALL:UNINITIALIZED=ON
+
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
 
@@ -519,7 +522,7 @@ CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding Python3
-FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[/usr/bin/python3][cfound components: Interpreter ][v3.11.2()]
+FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[/home/taylor/Buddy_Bot/buddybot/ros2_workspace/yolov8_venv/bin/python3][cfound components: Interpreter ][v3.11.2()]
 //The directory for Python library installation. This needs to
 // be in PYTHONPATH when 'setup.py install' is called.
 PYTHON_INSTALL_DIR:INTERNAL=lib/python3.11/site-packages
@@ -530,10 +533,10 @@ _Python3_Compiler_REASON_FAILURE:INTERNAL=
 //Development reason failure
 _Python3_Development_REASON_FAILURE:INTERNAL=
 //Path to a program.
-_Python3_EXECUTABLE:INTERNAL=/usr/bin/python3
+_Python3_EXECUTABLE:INTERNAL=/home/taylor/Buddy_Bot/buddybot/ros2_workspace/yolov8_venv/bin/python3
 //Python3 Properties
-_Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;11;2;64;;cpython-311-aarch64-linux-gnu;/usr/lib/python3.11;/usr/lib/python3.11;/usr/lib/python3/dist-packages;/usr/lib/python3/dist-packages
-_Python3_INTERPRETER_SIGNATURE:INTERNAL=4c8bfa8951e99fa32e4000a94f8c04a2
+_Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;11;2;64;;cpython-311-aarch64-linux-gnu;/usr/lib/python3.11;/usr/lib/python3.11;/home/taylor/Buddy_Bot/buddybot/ros2_workspace/yolov8_venv/lib/python3.11/site-packages;/home/taylor/Buddy_Bot/buddybot/ros2_workspace/yolov8_venv/lib/python3.11/site-packages
+_Python3_INTERPRETER_SIGNATURE:INTERNAL=510375c02b4951319329daf2109419f3
 //NumPy reason failure
 _Python3_NumPy_REASON_FAILURE:INTERNAL=
 

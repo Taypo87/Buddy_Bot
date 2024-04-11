@@ -1,0 +1,56 @@
+[31mCMake Error at /home/taylor/ros2_iron/install/rosidl_adapter/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:57 (message):
+  
+  execute_process(/home/taylor/Buddy_Bot/buddybot/ros2_workspace/yolov8_venv/bin/python3
+  -m rosidl_adapter --package-name move_bot --arguments-file
+  /home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/move_bot/rosidl_adapter__arguments__move_bot.json
+  --output-dir
+  /home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/move_bot/rosidl_adapter/move_bot
+  --output-file
+  /home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/move_bot/rosidl_adapter/move_bot.idls)
+  returned error code 1:
+
+  AttributeError processing template 'msg.idl.em'
+
+  Traceback (most recent call last):
+
+    File "/home/taylor/ros2_iron/install/rosidl_adapter/lib/python3.11/site-packages/rosidl_adapter/resource/__init__.py", line 51, in evaluate_template
+      em.BUFFERED_OPT: True,
+      ^^^^^^^^^^^^^^^
+
+  AttributeError: module 'em' has no attribute 'BUFFERED_OPT'
+
+  
+
+  During handling of the above exception, another exception occurred:
+
+  
+
+  Traceback (most recent call last):
+
+    File "<frozen runpy>", line 198, in _run_module_as_main
+    File "<frozen runpy>", line 88, in _run_code
+    File "/home/taylor/ros2_iron/install/rosidl_adapter/lib/python3.11/site-packages/rosidl_adapter/__main__.py", line 19, in <module>
+      sys.exit(main())
+               ^^^^^^
+    File "/home/taylor/ros2_iron/install/rosidl_adapter/lib/python3.11/site-packages/rosidl_adapter/main.py", line 53, in main
+      abs_idl_file = convert_to_idl(
+                     ^^^^^^^^^^^^^^^
+    File "/home/taylor/ros2_iron/install/rosidl_adapter/lib/python3.11/site-packages/rosidl_adapter/__init__.py", line 19, in convert_to_idl
+      return convert_msg_to_idl(
+             ^^^^^^^^^^^^^^^^^^^
+    File "/home/taylor/ros2_iron/install/rosidl_adapter/lib/python3.11/site-packages/rosidl_adapter/msg/__init__.py", line 39, in convert_msg_to_idl
+      expand_template('msg.idl.em', data, output_file, encoding='iso-8859-1')
+    File "/home/taylor/ros2_iron/install/rosidl_adapter/lib/python3.11/site-packages/rosidl_adapter/resource/__init__.py", line 23, in expand_template
+      content = evaluate_template(template_name, data)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/home/taylor/ros2_iron/install/rosidl_adapter/lib/python3.11/site-packages/rosidl_adapter/resource/__init__.py", line 69, in evaluate_template
+      _interpreter.shutdown()
+      ^^^^^^^^^^^^^^^^^^^^^
+
+  AttributeError: 'NoneType' object has no attribute 'shutdown'
+
+Call Stack (most recent call first):
+  /home/taylor/ros2_iron/install/rosidl_cmake/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:132 (rosidl_adapt_interfaces)
+  CMakeLists.txt:20 (rosidl_generate_interfaces)
+
+[0m

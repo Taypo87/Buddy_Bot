@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_build_mpu_egg.dir/compiler_depend.make
 include CMakeFiles/ament_cmake_python_build_mpu_egg.dir/progress.make
 
 CMakeFiles/ament_cmake_python_build_mpu_egg:
-	cd /home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/mpu/ament_cmake_python/mpu && /usr/bin/python3 setup.py egg_info
+	cd /home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/mpu/ament_cmake_python/mpu && /home/taylor/Buddy_Bot/buddybot/ros2_workspace/yolov8_venv/bin/python3 setup.py egg_info
 
 ament_cmake_python_build_mpu_egg: CMakeFiles/ament_cmake_python_build_mpu_egg
 ament_cmake_python_build_mpu_egg: CMakeFiles/ament_cmake_python_build_mpu_egg.dir/build.make

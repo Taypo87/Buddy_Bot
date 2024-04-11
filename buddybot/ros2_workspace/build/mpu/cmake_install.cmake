@@ -61,7 +61,7 @@ endif()
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   execute_process(
         COMMAND
-        "/usr/bin/python3" "-m" "compileall"
+        "/home/taylor/Buddy_Bot/buddybot/ros2_workspace/yolov8_venv/bin/python3" "-m" "compileall"
         "/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/mpu/lib/python3.11/site-packages/mpu"
       )
 endif()

@@ -1,4 +1,0 @@
-[  2%] [32mBuilding CXX object CMakeFiles/rtabmap_util_plugins.dir/src/nodelets/point_cloud_xyz.cpp.o[0m
-[  5%] [32mBuilding CXX object CMakeFiles/rtabmap_util_plugins.dir/src/nodelets/point_cloud_xyzrgb.cpp.o[0m
-[  8%] [32mBuilding CXX object CMakeFiles/rtabmap_util_plugins.dir/src/nodelets/point_cloud_assembler.cpp.o[0m
-[ 11%] [32mBuilding CXX object CMakeFiles/rtabmap_util_plugins.dir/src/nodelets/imu_to_tf.cpp.o[0m

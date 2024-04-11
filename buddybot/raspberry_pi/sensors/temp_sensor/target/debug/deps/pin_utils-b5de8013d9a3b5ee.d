@@ -1,0 +1,9 @@
+/home/taylor/Buddy_Bot/buddybot/raspberry_pi/sensors/temp_sensor/target/debug/deps/libpin_utils-b5de8013d9a3b5ee.rmeta: /home/taylor/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pin-utils-0.1.0/src/lib.rs /home/taylor/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pin-utils-0.1.0/src/stack_pin.rs /home/taylor/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pin-utils-0.1.0/src/projection.rs
+
+/home/taylor/Buddy_Bot/buddybot/raspberry_pi/sensors/temp_sensor/target/debug/deps/libpin_utils-b5de8013d9a3b5ee.rlib: /home/taylor/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pin-utils-0.1.0/src/lib.rs /home/taylor/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pin-utils-0.1.0/src/stack_pin.rs /home/taylor/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pin-utils-0.1.0/src/projection.rs
+
+/home/taylor/Buddy_Bot/buddybot/raspberry_pi/sensors/temp_sensor/target/debug/deps/pin_utils-b5de8013d9a3b5ee.d: /home/taylor/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pin-utils-0.1.0/src/lib.rs /home/taylor/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pin-utils-0.1.0/src/stack_pin.rs /home/taylor/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pin-utils-0.1.0/src/projection.rs
+
+/home/taylor/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pin-utils-0.1.0/src/lib.rs:
+/home/taylor/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pin-utils-0.1.0/src/stack_pin.rs:
+/home/taylor/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pin-utils-0.1.0/src/projection.rs:

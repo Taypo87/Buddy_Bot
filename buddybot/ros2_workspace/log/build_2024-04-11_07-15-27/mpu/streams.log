@@ -1,0 +1,43 @@
+[1.038s] Invoking command in '/home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/mpu': PS1=(yolov8_venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w \$\[\033[00m\] VIRTUAL_ENV_PROMPT=(yolov8_venv) /usr/bin/cmake /home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/mpu -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/mpu
+[1.253s] -- The C compiler identification is GNU 12.2.0
+[1.426s] -- The CXX compiler identification is GNU 12.2.0
+[1.454s] -- Detecting C compiler ABI info
+[1.725s] -- Detecting C compiler ABI info - done
+[1.740s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.743s] -- Detecting C compile features
+[1.750s] -- Detecting C compile features - done
+[1.755s] -- Detecting CXX compiler ABI info
+[2.080s] -- Detecting CXX compiler ABI info - done
+[2.097s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.097s] -- Detecting CXX compile features
+[2.098s] -- Detecting CXX compile features - done
+[2.120s] -- Found ament_cmake: 2.0.4 (/home/taylor/ros2_iron/install/ament_cmake/share/ament_cmake/cmake)
+[4.234s] -- Found Python3: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/yolov8_venv/bin/python3 (found version "3.11.2") found components: Interpreter 
+[4.893s] -- Found rclpy: 4.1.4 (/home/taylor/ros2_iron/install/rclpy/share/rclpy/cmake)
+[4.898s] -- Found std_msgs: 5.0.0 (/home/taylor/ros2_iron/install/std_msgs/share/std_msgs/cmake)
+[5.090s] -- Found rosidl_generator_c: 4.0.1 (/home/taylor/ros2_iron/install/rosidl_generator_c/share/rosidl_generator_c/cmake)
+[5.148s] -- Found rosidl_generator_cpp: 4.0.1 (/home/taylor/ros2_iron/install/rosidl_generator_cpp/share/rosidl_generator_cpp/cmake)
+[5.262s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_introspection_c;rosidl_typesupport_fastrtps_c
+[5.378s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_introspection_cpp;rosidl_typesupport_fastrtps_cpp
+[6.472s] -- Configuring done
+[6.489s] -- Generating done
+[6.491s] [33mCMake Warning:
+[6.491s]   Manually-specified variables were not used by the project:
+[6.491s] 
+[6.491s]     CATKIN_INSTALL_INTO_PREFIX_ROOT
+[6.491s]     CATKIN_SYMLINK_INSTALL
+[6.492s] 
+[6.492s] [0m
+[6.492s] -- Build files have been written to: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/mpu
+[6.515s] Invoked command in '/home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/mpu' returned '0': PS1=(yolov8_venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w \$\[\033[00m\] VIRTUAL_ENV_PROMPT=(yolov8_venv) /usr/bin/cmake /home/taylor/Buddy_Bot/buddybot/ros2_workspace/src/mpu -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/mpu
+[6.528s] Invoking command in '/home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/mpu': PS1=(yolov8_venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w \$\[\033[00m\] VIRTUAL_ENV_PROMPT=(yolov8_venv) /usr/bin/cmake --build /home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/mpu -- -j4 -l4
+[6.784s] Built target ament_cmake_python_copy_mpu
+[7.869s] running egg_info
+[7.870s] creating mpu.egg-info
+[7.897s] writing mpu.egg-info/PKG-INFO
+[7.897s] writing dependency_links to mpu.egg-info/dependency_links.txt
+[7.899s] writing top-level names to mpu.egg-info/top_level.txt
+[7.899s] writing manifest file 'mpu.egg-info/SOURCES.txt'
+[7.984s] reading manifest file 'mpu.egg-info/SOURCES.txt'
+[7.984s] writing manifest file 'mpu.egg-info/SOURCES.txt'
+[8.176s] Built target ament_cmake_python_build_mpu_egg

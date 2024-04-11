@@ -2,6 +2,9 @@
 #include "../spi.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <unistd.h>
+#include <sys/types.h>
+#include <sys/wait.h>
 
 #define DEAD_ZONE_X 12000
 #define DEAD_ZONE_Y 12000
@@ -15,6 +18,8 @@ int main(int argc, char *argv[])
     int running = 1, axisValueX, axisValueY;
     int prevAxisValueX = 0; // Previous value of the X axis
     int prevAxisValueY = 0; // Previous value of the Y axis
+    pid_t pid;
+    char *args[] = {"/bin/temp_sensor", NULL};
 
     if (SDL_Init(SDL_INIT_VIDEO | SDL_INIT_JOYSTICK) < 0)
     {
@@ -68,15 +73,30 @@ int main(int argc, char *argv[])
             prevAxisValueY = axisValueY;
             move_forward(spifd);
         }
-
         SDL_Delay(10); // Add a small delay to prevent the loop from running too fast
 
 
         // Check for the quit event
         SDL_Event event;
-        while (SDL_PollEvent(&event)) {
-            if (event.type == SDL_QUIT) {
+        while (SDL_PollEvent(&event))
+        {
+            if (event.type == SDL_QUIT)
+            {
                 running = 0;
+            } else if (event.type == SDL_JOYBUTTONDOWN)
+            {
+                if (event.jbutton.button == 8)
+                {
+                    pid = fork();
+                    if (pid == -1)
+                        perror("fork");
+                    if (pid == 0)  //child
+                    {
+                        execve(args, args[0], NULL);
+                        perror("execve");
+                        exit(EXIT_FAILURE);
+                    } 
+                }
             }
         }
     }

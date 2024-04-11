@@ -1,0 +1,31 @@
+[3.916s] Invoking command in '/home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/yolov8_ros': PS1=(yolov8_venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w \$\[\033[00m\] PYTHONPATH=/home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/yolov8_ros/prefix_override:/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/yolov8_ros/lib/python3.11/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(yolov8_venv) /usr/bin/python3 setup.py develop --editable --build-directory /home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/yolov8_ros/build --no-deps install_data
+[5.245s] running develop
+[5.245s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:146: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[5.245s]   warnings.warn(
+[5.343s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[5.343s]   warnings.warn(
+[5.873s] running egg_info
+[5.873s] creating yolov8_ros.egg-info
+[5.924s] writing yolov8_ros.egg-info/PKG-INFO
+[5.925s] writing dependency_links to yolov8_ros.egg-info/dependency_links.txt
+[5.925s] writing entry points to yolov8_ros.egg-info/entry_points.txt
+[5.925s] writing requirements to yolov8_ros.egg-info/requires.txt
+[5.926s] writing top-level names to yolov8_ros.egg-info/top_level.txt
+[5.926s] writing manifest file 'yolov8_ros.egg-info/SOURCES.txt'
+[6.029s] reading manifest file 'yolov8_ros.egg-info/SOURCES.txt'
+[6.030s] writing manifest file 'yolov8_ros.egg-info/SOURCES.txt'
+[6.111s] running build_ext
+[6.112s] Creating /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/yolov8_ros/lib/python3.11/site-packages/yolov8-ros.egg-link (link to .)
+[6.113s] Installing debug_node script to /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/yolov8_ros/lib/yolov8_ros
+[6.114s] Installing detect_3d_node script to /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/yolov8_ros/lib/yolov8_ros
+[6.115s] Installing tracking_node script to /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/yolov8_ros/lib/yolov8_ros
+[6.115s] Installing yolov8_node script to /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/yolov8_ros/lib/yolov8_ros
+[6.116s] 
+[6.118s] Installed /home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/yolov8_ros
+[6.119s] running install_data
+[6.119s] creating /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/yolov8_ros/share/ament_index
+[6.119s] creating /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/yolov8_ros/share/ament_index/resource_index
+[6.119s] creating /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/yolov8_ros/share/ament_index/resource_index/packages
+[6.119s] copying resource/yolov8_ros -> /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/yolov8_ros/share/ament_index/resource_index/packages
+[6.119s] copying package.xml -> /home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/yolov8_ros/share/yolov8_ros
+[6.396s] Invoked command in '/home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/yolov8_ros' returned '0': PS1=(yolov8_venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w \$\[\033[00m\] PYTHONPATH=/home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/yolov8_ros/prefix_override:/home/taylor/Buddy_Bot/buddybot/ros2_workspace/install/yolov8_ros/lib/python3.11/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(yolov8_venv) /usr/bin/python3 setup.py develop --editable --build-directory /home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/yolov8_ros/build --no-deps install_data

@@ -1,0 +1,85 @@
+-- The C compiler identification is GNU 12.2.0
+-- The CXX compiler identification is GNU 12.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.0.4 (/home/taylor/ros2_iron/install/ament_cmake/share/ament_cmake/cmake)
+-- Found Python3: /home/taylor/Buddy_Bot/buddybot/ros2_workspace/yolov8_venv/bin/python3 (found version "3.11.2") found components: Interpreter 
+-- Found rclcpp: 21.0.5 (/home/taylor/ros2_iron/install/rclcpp/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 4.0.1 (/home/taylor/ros2_iron/install/rosidl_generator_c/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.0.1 (/home/taylor/ros2_iron/install/rosidl_generator_cpp/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_introspection_c;rosidl_typesupport_fastrtps_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_introspection_cpp;rosidl_typesupport_fastrtps_cpp
+-- Found rmw_implementation_cmake: 7.1.0 (/home/taylor/ros2_iron/install/rmw_implementation_cmake/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 7.1.3 (/home/taylor/ros2_iron/install/rmw_fastrtps_cpp/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.11")  
+-- Found FastRTPS: /home/taylor/ros2_iron/install/fastrtps/include  
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found std_msgs: 5.0.0 (/home/taylor/ros2_iron/install/std_msgs/share/std_msgs/cmake)
+-- Found rosidl_default_generators: 1.5.0 (/home/taylor/ros2_iron/install/rosidl_default_generators/share/rosidl_default_generators/cmake)
+-- Found rosidl_adapter: 4.0.1 (/home/taylor/ros2_iron/install/rosidl_adapter/share/rosidl_adapter/cmake)
+-- Configuring incomplete, errors occurred!
+See also "/home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/movement/CMakeFiles/CMakeOutput.log".
+[31mCMake Error at /home/taylor/ros2_iron/install/rosidl_adapter/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:57 (message):
+  
+  execute_process(/home/taylor/Buddy_Bot/buddybot/ros2_workspace/yolov8_venv/bin/python3
+  -m rosidl_adapter --package-name movement --arguments-file
+  /home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/movement/rosidl_adapter__arguments__movement.json
+  --output-dir
+  /home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/movement/rosidl_adapter/movement
+  --output-file
+  /home/taylor/Buddy_Bot/buddybot/ros2_workspace/build/movement/rosidl_adapter/movement.idls)
+  returned error code 1:
+
+  AttributeError processing template 'msg.idl.em'
+
+  Traceback (most recent call last):
+
+    File "/home/taylor/ros2_iron/install/rosidl_adapter/lib/python3.11/site-packages/rosidl_adapter/resource/__init__.py", line 51, in evaluate_template
+      em.BUFFERED_OPT: True,
+      ^^^^^^^^^^^^^^^
+
+  AttributeError: module 'em' has no attribute 'BUFFERED_OPT'
+
+  
+
+  During handling of the above exception, another exception occurred:
+
+  
+
+  Traceback (most recent call last):
+
+    File "<frozen runpy>", line 198, in _run_module_as_main
+    File "<frozen runpy>", line 88, in _run_code
+    File "/home/taylor/ros2_iron/install/rosidl_adapter/lib/python3.11/site-packages/rosidl_adapter/__main__.py", line 19, in <module>
+      sys.exit(main())
+               ^^^^^^
+    File "/home/taylor/ros2_iron/install/rosidl_adapter/lib/python3.11/site-packages/rosidl_adapter/main.py", line 53, in main
+      abs_idl_file = convert_to_idl(
+                     ^^^^^^^^^^^^^^^
+    File "/home/taylor/ros2_iron/install/rosidl_adapter/lib/python3.11/site-packages/rosidl_adapter/__init__.py", line 19, in convert_to_idl
+      return convert_msg_to_idl(
+             ^^^^^^^^^^^^^^^^^^^
+    File "/home/taylor/ros2_iron/install/rosidl_adapter/lib/python3.11/site-packages/rosidl_adapter/msg/__init__.py", line 39, in convert_msg_to_idl
+      expand_template('msg.idl.em', data, output_file, encoding='iso-8859-1')
+    File "/home/taylor/ros2_iron/install/rosidl_adapter/lib/python3.11/site-packages/rosidl_adapter/resource/__init__.py", line 23, in expand_template
+      content = evaluate_template(template_name, data)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/home/taylor/ros2_iron/install/rosidl_adapter/lib/python3.11/site-packages/rosidl_adapter/resource/__init__.py", line 69, in evaluate_template
+      _interpreter.shutdown()
+      ^^^^^^^^^^^^^^^^^^^^^
+
+  AttributeError: 'NoneType' object has no attribute 'shutdown'
+
+Call Stack (most recent call first):
+  /home/taylor/ros2_iron/install/rosidl_cmake/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:132 (rosidl_adapt_interfaces)
+  CMakeLists.txt:20 (rosidl_generate_interfaces)
+
+[0m
